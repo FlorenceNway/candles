@@ -666,6 +666,20 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+
+/* Navigation bar */
+@media screen and (min-width: 425px) {
+  #desktop-navigation {
+    display: block; }
+  #mobile-navigation {
+    display: none; } }
+
+@media screen and (max-width: 425px) {
+  #desktop-navigation {
+    display: none; }
+  #mobile-navigation {
+    display: block; } }
+=======
 .logo {
   width: 150px; }
   .logo img {
@@ -683,3 +697,4 @@ form .next_btn {
   text-shadow: none;
   border-bottom: 1px dashed;
   color: #000; }
+
