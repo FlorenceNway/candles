@@ -97,12 +97,14 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function candles_scripts() {
+	wp_enqueue_script('jquery');
 	wp_enqueue_style( 'candles-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'font_awesome','https://use.fontawesome.com/releases/v5.0.13/css/all.css' );
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/build/css/bootstrap.min.css' );
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/build/js/bootstrap.min.js',array(), '20180612', true  );
 
 	wp_enqueue_script( 'candles-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
