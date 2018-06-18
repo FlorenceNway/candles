@@ -101,12 +101,14 @@ div.container{
 };
 
 @media screen and (max-width: 424px) {
-
-#mobile-navigation {
-display: flex;
+  #mobile-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  #desktop-navigation {
+    display: none; 
+   }
+  .scrolled-nav {
+    display: none; 
+  }  
 }
-#desktop-navigation {display: none;}
-.scrolled-nav {display: none;}
-
-
-};
