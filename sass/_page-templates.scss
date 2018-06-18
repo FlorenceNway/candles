@@ -5,25 +5,30 @@
 /* Front page */
 
 
-/* Navigation bar */
 
-@media screen and (min-width: 425px) {
-
-#desktop-navigation {
-	display: block; 
-	
+/*------------Mobile Nav----------------------*/
+.mobile-menu{
+	height: 50%;
+	a{
+	color: red;
+	}
+}
+#mobile-navigation a{
+	color: black;
+}
+.scrolled-nav{
+div.menu-menu-1-container {
+    display: block !important;
+}
+}
+#mobile-navigation button{
+	width: 100%;
+	background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+	color: white;
 }
 
-#mobile-navigation {display: none;}
 
-}
-
-@media screen and (max-width: 425px) {
-
-#desktop-navigation {display: none;}
-#mobile-navigation {display: block;}
-
-}
+/*-----------Desktop nav------------------------*/
 
 #desktop-navigation{
 	background: linear-gradient(to right, #01c4d3, #f4c7ee);
@@ -31,7 +36,7 @@
 	-webkit-transition: height .5s;
 	height: 700px;
   	width: 100%;
-  	display: flex;
+  
     justify-content: center;
     align-items: center;
     -webkit-transition: height .5s, line-height .5s; 
@@ -53,7 +58,7 @@
 }
 
 .scrolled-nav {
-display: flex !important;
+
   justify-content: left !important;
   height: 90px !important;
   line-height: 60px !important;
@@ -66,10 +71,13 @@ display: flex !important;
 
 .scrolled-nav {
 div.menu-menu-1-container{
-display: block !important;
+display: block;
   }
 }
 
+.menu-toggle:click{
+	display: block;
+}
 
 div.container{
 	display: flex;
@@ -82,3 +90,23 @@ div.container{
 	 color: white;
 }
 
+/*--------------- Navigation bar media screens----------*/
+
+@media screen and (min-width: 425px) {
+
+#desktop-navigation {display: flex;}
+
+#mobile-navigation {display: none;}
+
+};
+
+@media screen and (max-width: 424px) {
+
+#mobile-navigation {
+display: flex;
+}
+#desktop-navigation {display: none;}
+.scrolled-nav {display: none;}
+
+
+};

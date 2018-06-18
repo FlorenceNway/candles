@@ -667,19 +667,25 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-/* Navigation bar */
-@media screen and (min-width: 425px) {
-  #desktop-navigation {
-    display: block; }
-  #mobile-navigation {
-    display: none; } }
+/*------------Mobile Nav----------------------*/
+.mobile-menu {
+  height: 50%; }
+  .mobile-menu a {
+    color: red; }
 
-@media screen and (max-width: 425px) {
-  #desktop-navigation {
-    display: none; }
-  #mobile-navigation {
-    display: block; } }
+#mobile-navigation a {
+  color: black; }
 
+.scrolled-nav div.menu-menu-1-container {
+  display: block !important; }
+
+#mobile-navigation button {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
+  background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+  color: white; }
+
+/*-----------Desktop nav------------------------*/
 #desktop-navigation {
   background: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
   background: linear-gradient(to right, #01c4d3, #f4c7ee);
@@ -687,9 +693,6 @@ object {
   -webkit-transition: height .5s;
   height: 700px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -714,9 +717,6 @@ object {
     opacity: 1; } }
 
 .scrolled-nav {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
   -webkit-box-pack: left !important;
       -ms-flex-pack: left !important;
           justify-content: left !important;
@@ -727,7 +727,10 @@ object {
   width: 60px; }
 
 .scrolled-nav div.menu-menu-1-container {
-  display: block !important; }
+  display: block; }
+
+.menu-toggle:click {
+  display: block; }
 
 div.container {
   display: -webkit-box;
@@ -743,6 +746,25 @@ div.container {
 #primary-menu a {
   margin-left: 25px;
   color: white; }
+
+/*--------------- Navigation bar media screens----------*/
+@media screen and (min-width: 425px) {
+  #desktop-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  #mobile-navigation {
+    display: none; } }
+
+@media screen and (max-width: 424px) {
+  #mobile-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  #desktop-navigation {
+    display: none; }
+  .scrolled-nav {
+    display: none; } }
 
 .logo {
   width: 150px; }

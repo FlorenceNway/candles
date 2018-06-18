@@ -15,3 +15,14 @@ $(document).ready(function(){
   
 }); 
 })(jQuery);
+
+
+// fullscreen navigation mobile
+
+function openNav() {
+    document.getElementById("mobile-navigation").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mobile-navigation").style.display = "none";
+}

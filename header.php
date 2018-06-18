@@ -32,7 +32,7 @@
 
 				
 				<nav id="desktop-navigation" class="main-navigation" role="navigation">
-				
+				<section class="nav">
 				<a href="<?php echo get_option("siteurl"); ?>" alt="site logo"/>
 				<div class="container">
 				<div class="logo"> 
@@ -44,9 +44,9 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</div>
-			
+			</section>
 				</nav><!-- #site-navigation -->
-
+			
 			</header><!-- #masthead -->
 			
 
