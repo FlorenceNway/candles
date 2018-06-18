@@ -7,7 +7,7 @@ $(document).ready(function(){
     
     if (scrollTop >= 10) {
       $('#desktop-navigation').addClass('scrolled-nav');
-    } else if (scrollTop < 10) {
+    } else if (scrollTop <= 10) {
       $('#desktop-navigation').removeClass('scrolled-nav');
     } 
     

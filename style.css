@@ -685,13 +685,23 @@ object {
   background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
   color: white; }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9); }
+
 /*-----------Desktop nav------------------------*/
 #desktop-navigation {
   background: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
   background: linear-gradient(to right, #01c4d3, #f4c7ee);
   position: fixed;
   -webkit-transition: height .5s;
-  height: 700px;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -700,9 +710,17 @@ object {
       -ms-flex-align: center;
           align-items: center;
   -webkit-transition: height .5s, line-height .5s;
-  transition: height .5s, line-height .5s; }
+  transition: height .5s, line-height .5s;
+  top: 0;
+  margin-top: 25px; }
   #desktop-navigation div.menu-menu-1-container {
     display: none; }
+
+.nav-height {
+  height: 45px; }
+
+.nav-full-height {
+  height: 100vh; }
 
 @-webkit-keyframes fadein {
   0% {
@@ -783,3 +801,6 @@ form .next_btn {
   text-shadow: none;
   border-bottom: 1px dashed;
   color: #000; }
+
+.d-container {
+  margin-top: 10%; }
