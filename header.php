@@ -21,9 +21,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<div class="logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/black_logo.svg" alt="Candles logo" >	
-			</div>
+			
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
@@ -31,10 +29,25 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
+
+				
 				<nav id="desktop-navigation" class="main-navigation" role="navigation">
+				<section class="nav">
+				<a href="<?php echo get_option("siteurl"); ?>" alt="site logo"/>
+				<div class="container">
+				<div class="logo"> 
+				<img src="<?php echo get_template_directory_uri(); ?>/images/white_logo.svg" alt="Candles logo" >
+				</a>
+					</div>
+
+
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</div>
+			</section>
 				</nav><!-- #site-navigation -->
+			
 			</header><!-- #masthead -->
+			
 
 			<div id="content" class="site-content">
