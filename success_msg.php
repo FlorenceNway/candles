@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Success Message Template
  *
  * @package RED_Starter_Theme
  */
