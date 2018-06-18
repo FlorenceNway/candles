@@ -345,6 +345,9 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+a {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -469,11 +472,24 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none; }
+  .menu-menu-1-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .main-navigation ul {
-    display: block; } }
+    display: block; }
+    .main-navigation ul li {
+      padding-right: 10px; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -748,6 +764,7 @@ div.container {
   color: white; }
 
 /*--------------- Navigation bar media screens----------*/
+
 @media screen and (min-width: 425px) {
   #desktop-navigation {
     display: -webkit-box;
@@ -763,8 +780,11 @@ div.container {
     display: flex; }
   #desktop-navigation {
     display: none; }
+  #mobile-navigation {
+    display: block; } 
   .scrolled-nav {
     display: none; } }
+
 
 .logo {
   width: 150px; }

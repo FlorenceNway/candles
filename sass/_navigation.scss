@@ -101,12 +101,28 @@ a {
 	display: block;
 }
 
+
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+
+
 @media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
 	}
+	.menu-menu-1-container {
+	    display: flex;
+	    justify-content: flex-end;
+   	}
 	.main-navigation ul {
 		display: block;
+
+		li{
+			padding-right: 10px;
+		}
+
 	}
 }
 
@@ -129,4 +145,6 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+
+	
 }
