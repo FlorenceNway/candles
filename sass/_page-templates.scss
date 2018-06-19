@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+
 /* Front page */
 /*------------Mobile Nav----------------------*/
 .mobile-menu{
@@ -18,9 +19,9 @@ div.menu-menu-1-container {
 }
 }
 #mobile-navigation button{
-    width: 100%;
-    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
-    color: white;
+	width: 100%;
+	background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+	color: white;
 }
 .overlay {
     height: 100%;
@@ -33,6 +34,16 @@ div.menu-menu-1-container {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
 }
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.mobile-menu{
+  position: relative;
+}
+
 /*-----------Desktop nav------------------------*/
 #desktop-navigation{
     background: linear-gradient(to right, #01c4d3, #f4c7ee);
@@ -53,19 +64,27 @@ div.menu-menu-1-container {
     }
 }
 .nav-height {
+	height:70px;
+}
+.nav-height .logo {
+height: 70px;
+weight: 60px;
     height:45px;
 }
 .nav-full-height {
     height: 100vh;
 }
+
 @-webkit-keyframes fadein {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 @keyframes fadein {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 .scrolled-nav {
         justify-content: left !important;
         height: 90px !important;
@@ -76,28 +95,38 @@ div.menu-menu-1-container {
 .scrolled-nav .logo{
       width: 60px;
 }
+
 .scrolled-nav {
-            div.menu-menu-1-container{
-                        display: block;
-            }
+			div.menu-menu-1-container{
+						display: block;
+		  	}
 }
+
 .menu-toggle:click{
-    display: block;
+	display: block;
 }
+
 div.container{
-    display: flex;
+	display: flex;
     align-items: flex-end;
     justify-content: center;
 }
+
 #primary-menu a{
-     margin-left: 25px;
-     color: white;
+	 margin-left: 25px;
+	 color: white;
 }
+
 /*--------------- Navigation bar media screens----------*/
+
 @media screen and (min-width: 425px) {
+
 #desktop-navigation {display: flex;}
+
 #mobile-navigation {display: none;}
+
 };
+
 @media screen and (max-width: 424px) {
   #mobile-navigation {
     display: -webkit-box;
