@@ -21,33 +21,32 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			
-
-			<header id="masthead" class="site-header container" role="banner">
+		
+		<header id="masthead" class="site-header container" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"></p>
 				</div><!-- .site-branding -->
 
 
-				
-				<nav id="desktop-navigation" class="main-navigation" role="navigation">
+			<nav id="desktop-navigation" class="main-navigation" role="navigation">
 				<section class="nav">
-				<a href="<?php echo get_option("siteurl"); ?>" alt="site logo"/>
-				<div class="container">
-				<div class="logo"> 
-				<img src="<?php echo get_template_directory_uri(); ?>/images/white_logo.svg" alt="Candles logo" >
-				</a>
+					<div class="logo"> 
+						<a href="<?php echo get_option("siteurl"); ?>" alt="site logo"/>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/white_logo.svg" alt="Candles logo" >
+						</a>
 					</div>
 
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?>
+					</button>
 
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</div>
-			</section>
-				</nav><!-- #site-navigation -->
+					<div>
+						<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</div>
+				</section>
+			</nav><!-- #site-navigation -->
 			
-			</header><!-- #masthead -->
+		</header><!-- #masthead -->
 			
 
-			<div id="content" class="site-content container">
+	<div id="content" class="site-content container desktop-content">
