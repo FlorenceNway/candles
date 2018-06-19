@@ -43,6 +43,8 @@ div.menu-menu-1-container {
 #desktop-navigation{
 	background: linear-gradient(to right, #01c4d3, #f4c7ee);
 	position: fixed;
+	top: 0;
+	left: 0;
 	-webkit-transition: height .5s;
   	width: 100%;
   
@@ -79,10 +81,9 @@ div.menu-menu-1-container {
 }
 
 .scrolled-nav {
-
-  justify-content: left !important;
-  height: 90px !important;
-  line-height: 60px !important;
+	  	justify-content: left !important;
+  		height: 90px !important;
+  		line-height: 60px !important;
   
 }
   
@@ -91,9 +92,9 @@ div.menu-menu-1-container {
 }
 
 .scrolled-nav {
-div.menu-menu-1-container{
-display: block;
-  }
+			div.menu-menu-1-container{
+						display: block;
+		  	}
 }
 
 .menu-toggle:click{

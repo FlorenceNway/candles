@@ -64,6 +64,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
 .logo{
 
 	width: 150px;
@@ -78,7 +85,7 @@ form{
 	div{
 		display: block;
 	}
-	
+
 
 	.next_btn{
 		background: none;
@@ -90,11 +97,10 @@ form{
 
 	}
 }
+
 .d-container{
 	margin-top: 10%;
 }
-
-
 .nav-height .logo {
 
 }

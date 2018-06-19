@@ -20,16 +20,14 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-
 			
 			<?php $fullHeight = is_front_page(); ?> 
 			<header id="masthead" class="site-header" role="banner">
+
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<p class="site-description"></p>
 				</div><!-- .site-branding -->
-
-
 				
 				<nav id="desktop-navigation" class="main-navigation <?php echo $fullHeight  ? ' nav-full-height ' : ' nav-height'; ?>" role="navigation">
 					<section class="nav">
@@ -44,7 +42,6 @@
 					</section>
 				</nav><!-- #site-navigation -->
 			
-			</header><!-- #masthead -->
-			
-
-			<div id="content" class="site-content d-container">
+		</header><!-- #masthead -->
+		
+		<div id="content" class="site-content d-container">
