@@ -8,9 +8,9 @@
     
      
       if (scrollTop >= 10) {
-        $('#desktop-navigation').addClass('scrolled-nav');
+        $('.nav-full-height').addClass('scrolled-nav');
       } else if (scrollTop < 10) {
-        $('#desktop-navigation').removeClass('scrolled-nav');
+        $('.nav-full-height').removeClass('scrolled-nav');
        } 
       
     
