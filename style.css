@@ -764,7 +764,6 @@ div.container {
   color: white; }
 
 /*--------------- Navigation bar media screens----------*/
-
 @media screen and (min-width: 425px) {
   #desktop-navigation {
     display: -webkit-box;
@@ -780,11 +779,8 @@ div.container {
     display: flex; }
   #desktop-navigation {
     display: none; }
-  #mobile-navigation {
-    display: block; } 
   .scrolled-nav {
     display: none; } }
-
 
 .logo {
   width: 150px; }
