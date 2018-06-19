@@ -1,4 +1,5 @@
 /*!
+<<<<<<< HEAD
 Theme Name: Candles Custom Theme
 Theme URI: http://underscores.me/
 Author: Florence, Darragh
@@ -8,6 +9,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
+<<<<<<< HEAD
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -805,6 +807,7 @@ div.container {
 .container {
   width: 90%;
   margin: 0 auto; }
+
 .logo {
   width: 150px; }
   .logo img {
@@ -822,4 +825,8 @@ form .next_btn {
   text-shadow: none;
   border-bottom: 1px dashed;
   color: #000; }
+
+.d-container {
+  margin-top: 10%;
+  min-height: 100vh; }
 

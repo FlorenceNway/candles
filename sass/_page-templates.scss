@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 
 /* Front page */
 
@@ -15,6 +16,18 @@
 }
 #mobile-navigation a{
 	color: black;
+=======
+/* Front page */
+/*------------Mobile Nav----------------------*/
+.mobile-menu{
+    height: 50%;
+    a{
+    color: red;
+    }
+}
+#mobile-navigation a{
+    color: black;
+>>>>>>> origin/master
 }
 .scrolled-nav{
 div.menu-menu-1-container {
@@ -22,9 +35,15 @@ div.menu-menu-1-container {
 }
 }
 #mobile-navigation button{
+<<<<<<< HEAD
 	width: 100%;
 	background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
 	color: white;
+=======
+    width: 100%;
+    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+    color: white;
+>>>>>>> origin/master
 }
 .overlay {
     height: 100%;
@@ -39,14 +58,13 @@ div.menu-menu-1-container {
 }
 
 /*-----------Desktop nav------------------------*/
-
 #desktop-navigation{
-	background: linear-gradient(to right, #01c4d3, #f4c7ee);
-	position: fixed;
-	top: 0;
-	left: 0;
-	-webkit-transition: height .5s;
-  	width: 100%;
+    background: linear-gradient(to right, #01c4d3, #f4c7ee);
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: height .5s;
+    width: 100%;
   
     justify-content: center;
     align-items: center;
@@ -54,20 +72,15 @@ div.menu-menu-1-container {
     transition: height .5s, line-height .5s;
     top: 0;
     margin-top: 25px;
-
-  	div.menu-menu-1-container {
-		display:none;
-  	}
-
-
+    div.menu-menu-1-container {
+        display:none;
+    }
 }
-
 .nav-height {
-	height:45px;
+    height:45px;
 }
-
 .nav-full-height {
-	height: 100vh;
+    height: 100vh;
 }
 
 @-webkit-keyframes fadein {
@@ -81,9 +94,9 @@ div.menu-menu-1-container {
 }
 
 .scrolled-nav {
-	  	justify-content: left !important;
-  		height: 90px !important;
-  		line-height: 60px !important;
+        justify-content: left !important;
+        height: 90px !important;
+        line-height: 60px !important;
   
 }
   
