@@ -1,7 +1,7 @@
 /*!
-Theme Name: Candles Custom Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Florence, Darragh
+Author: RED Academy
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -712,6 +712,15 @@ object {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.9); }
 
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px; }
+
+.mobile-menu {
+  position: relative; }
+
 /*-----------Desktop nav------------------------*/
 #desktop-navigation {
   background: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
@@ -735,7 +744,11 @@ object {
     display: none; }
 
 .nav-height {
-  height: 45px; }
+  height: 70px; }
+
+.nav-height .logo {
+  height: 70px;
+  weight: 60px; }
 
 .nav-full-height {
   height: 100vh; }
@@ -805,6 +818,7 @@ div.container {
 .container {
   width: 90%;
   margin: 0 auto; }
+
 .logo {
   width: 150px; }
   .logo img {
@@ -823,3 +837,5 @@ form .next_btn {
   border-bottom: 1px dashed;
   color: #000; }
 
+.d-container {
+  margin-top: 10%; }
