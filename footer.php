@@ -15,10 +15,11 @@
 				</div><!-- .site-info -->
 
 				<nav id="mobile-navigation" class="overlay" role="navigation">
-					<button class="menu-toggle" aria-controls="secondary-menu" onclick="openNav()" aria-expanded="false"><?php esc_html( 'Secondary Menu' ); ?>Menu</button>
+					<button class="closebtn" aria-controls="secondary-menu" onclick="openNav()" aria-expanded="false"><?php esc_html( 'Secondary Menu' ); ?>Menu</button>
 					
 					<div class="mobile-menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
 					</div>
 				</nav><!-- #site-navigation -->
 

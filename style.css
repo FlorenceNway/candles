@@ -1,15 +1,13 @@
 /*!
-<<<<<<< HEAD
 Theme Name: Candles Custom Theme
 Theme URI: http://underscores.me/
-Author: Florence, Darragh
+Author: RED Academy
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
-<<<<<<< HEAD
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -714,15 +712,29 @@ object {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.9); }
 
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px; }
+
+.mobile-menu {
+  position: relative; }
+
 /*-----------Desktop nav------------------------*/
 #desktop-navigation {
   background: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
   background: linear-gradient(to right, #01c4d3, #f4c7ee);
   position: fixed;
-  top: 0;
+  top: 0
+   
+    
   left: 0;
   -webkit-transition: height .5s;
   width: 100%;
+
+  
+  
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -737,7 +749,11 @@ object {
     display: none; }
 
 .nav-height {
-  height: 45px; }
+  height: 70px; }
+
+.nav-height .logo {
+  height: 70px;
+  weight: 60px; }
 
 .nav-full-height {
   height: 100vh; }
@@ -829,4 +845,3 @@ form .next_btn {
 .d-container {
   margin-top: 10%;
   min-height: 100vh; }
-
