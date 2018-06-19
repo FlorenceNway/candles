@@ -1,6 +1,9 @@
 
  (function($) {
    $(document).ready(function(){
+
+    console.log("hi");
+
      var scrollTop = 0;
        $(window).scroll(function(){
 

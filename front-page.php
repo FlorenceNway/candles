@@ -11,6 +11,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<h1>UX Mentoring simplified...</h1>
+			<ul class="intro">
+				<li>Tell us about yourself</li>
+				<li>Get your perfect match</li>
+				<li>Connect with them on Slack</li>
+			</ul>
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
