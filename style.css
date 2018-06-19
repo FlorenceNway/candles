@@ -706,6 +706,8 @@ object {
   background: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
   background: linear-gradient(to right, #01c4d3, #f4c7ee);
   position: fixed;
+  top: 0;
+  left: 0;
   -webkit-transition: height .5s;
   height: 700px;
   width: 100%;
@@ -782,6 +784,9 @@ div.container {
   .scrolled-nav {
     display: none; } }
 
+.container {
+  width: 90%;
+  margin: 0 auto; }
 .logo {
   width: 150px; }
   .logo img {
@@ -799,3 +804,6 @@ form .next_btn {
   text-shadow: none;
   border-bottom: 1px dashed;
   color: #000; }
+
+.desktop-content {
+  margin-top: 10%; }
