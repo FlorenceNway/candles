@@ -6,13 +6,11 @@
 
      scrollTop = $(window).scrollTop();
     
-     
-      if (scrollTop >= 10) {
-        $('#desktop-navigation').addClass('scrolled-nav');
-      } else if (scrollTop < 10) {
-        $('#desktop-navigation').removeClass('scrolled-nav');
-       } 
-      
+    if (scrollTop >= 10) {
+      $('.nav-full-height').addClass('scrolled-nav');
+    } else if (scrollTop <= 10) {
+      $('.nav-full-height').removeClass('scrolled-nav');
+    } 
     
    }); 
   
