@@ -1,6 +1,9 @@
 
  (function($) {
    $(document).ready(function(){
+
+    console.log("hi");
+
      var scrollTop = 0;
        $(window).scroll(function(){
 
@@ -15,5 +18,26 @@
    }); 
   
  }); 
+
+
+
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    location = 'http://example.com/';
+}, false );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  })(jQuery);
 
