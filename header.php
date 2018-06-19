@@ -32,18 +32,16 @@
 
 				
 				<nav id="desktop-navigation" class="main-navigation <?php echo $fullHeight  ? ' nav-full-height ' : ' nav-height'; ?>" role="navigation">
-				<section class="nav">
-				<a href="<?php echo get_option("siteurl"); ?>" alt="site logo"/>
-				<div class="container">
-				<div class="logo"> 
-				<img src="<?php echo get_template_directory_uri(); ?>/images/white_logo.svg" alt="Candles logo" >
-				</a>
-					</div>
+					<section class="nav">
+					 
+						<a href="<?php echo get_option("siteurl"); ?>" >
+							<img src="<?php echo get_template_directory_uri(); ?>/images/white_logo.svg" alt="Candles logo" class="logo">
+						</a>
 
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</div>
-			</section>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						
+					</section>
 				</nav><!-- #site-navigation -->
 			
 			</header><!-- #masthead -->
