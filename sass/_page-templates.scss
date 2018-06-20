@@ -117,25 +117,31 @@ div.container{
 	 color: white;
 }
 
-/*--------------- Navigation bar media screens----------*/
-
+/*------Desktop------------*/
 @media screen and (min-width: 425px) {
 
-#desktop-navigation {display: flex;}
+        #desktop-navigation {display: flex;}
 
-#mobile-navigation {display: none;}
+        #mobile-navigation {display: none;}
+
+        #moblie-frontpage {display: none;}
 
 };
 
+/*------Mobile------------*/
 @media screen and (max-width: 424px) {
   #mobile-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
   #desktop-navigation {
     display: none; 
    }
+
   .scrolled-nav {
     display: none; 
   }  
+
+  #moblie-frontpage {display: block;}
 }
