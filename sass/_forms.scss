@@ -60,3 +60,15 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+/*-------Form Next Button---*/
+form{
+	.next_btn{
+		background: none;
+		border: none;
+		box-shadow: none;
+		text-shadow: none;
+		border-bottom: 1px dashed;
+		color: #000;
+	}
+}

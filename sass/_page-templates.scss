@@ -117,7 +117,9 @@ div.container{
 	 color: white;
 }
 
-/*------Desktop------------*/
+/*--------------- Navigation bar media screens----------*/
+
+/*------Desktop Media Screen------------*/
 @media screen and (min-width: 425px) {
 
         #desktop-navigation {display: flex;}
@@ -128,7 +130,8 @@ div.container{
 
 };
 
-/*------Mobile------------*/
+/*------Mobile Media Screen------------*/
+
 @media screen and (max-width: 424px) {
   #mobile-navigation {
     display: -webkit-box;
