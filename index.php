@@ -19,11 +19,9 @@ get_header(); ?>
 				</header>
 
 			<?php endif; ?>
-
 			
 			<?php /* Start the Loop */ ?>
 			
-
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
@@ -57,11 +55,8 @@ get_header(); ?>
 					 	<div class="blog-detail">
 					     	<span class="author">
 					     		<?php 
-					     			$mykey_values = get_post_custom_values( 'author' );
-								  	foreach ( $mykey_values as $key => $value ) {
-								    echo $value; 
-								  }
-					     		?>
+					     			echo get_the_author();
+								  ?>
 			        		</span>
 			    		</div>
 
