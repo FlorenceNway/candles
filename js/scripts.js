@@ -19,6 +19,11 @@
   
  }); 
 
+
+
+
+
+
 //Redirect after submit
 document.addEventListener( 'wpcf7mailsent', function( event ) {
     location = 'http://localhost/candles_community_project/success-message/';

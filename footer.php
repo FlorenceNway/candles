@@ -15,17 +15,34 @@
 				</div><!-- .site-info -->
 
 				<nav id="mobile-navigation" class="overlay" role="navigation">
-					<button class="closebtn" aria-controls="secondary-menu" onclick="openNav()" aria-expanded="false"><?php esc_html( 'Secondary Menu' ); ?>Menu</button>
+
+					<!-- I added a close button 20/06/18  -->
+					
+			<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">Closee</a>
 					
 					<div class="mobile-menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-					</div>
-				</nav><!-- #site-navigation -->
 
+					</div>
+					
+				</nav><!-- #site-navigation -->
+				 <!-- Added a open button 20/06/18-->
+		<span id="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
+		<!-- added the open and close function for mobile nav -->
+		<script type="text/javascript">
+			
+			function openNav() {
+    document.getElementById("mobile-navigation").style.display = "flex";
+}
+
+function closeNav() {
+    document.getElementById("mobile-navigation").style.display = "none";
+}
+		</script>
 		<?php wp_footer(); ?>
 
 	</body>

@@ -148,3 +148,14 @@ a {
 
 	
 }
+
+/*Mobile overlay menu*/
+
+nav{
+.overlay {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: center;
+}
+}
