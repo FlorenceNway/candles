@@ -26,21 +26,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+  ## Links
+  ## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-	## Posts and pages
-	## Asides
-	## Comments
+  ## Posts and pages
+  ## Asides
+  ## Comments
 # Media
-	## Captions
-	## Galleries
+  ## Captions
+  ## Galleries
 # Page Templates
-	## Front page
+  ## Front page
 --------------------------------------------------------------*/
 html {
   font-family: sans-serif;
@@ -344,9 +344,6 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-a {
-  text-decoration: none; }
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -413,6 +410,16 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+/*-------Form Next Button---*/
+form .next_btn {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border-bottom: 1px dashed;
+  color: #000; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -796,7 +803,8 @@ div.container {
   margin-left: 25px;
   color: white; }
 
-/*------Desktop------------*/
+/*--------------- Navigation bar media screens----------*/
+/*------Desktop Media Screen------------*/
 @media screen and (min-width: 425px) {
   #desktop-navigation {
     display: -webkit-box;
@@ -807,7 +815,7 @@ div.container {
   #moblie-frontpage {
     display: none; } }
 
-/*------Mobile------------*/
+/*------Mobile Media Screen------------*/
 @media screen and (max-width: 424px) {
   #mobile-navigation {
     display: -webkit-box;
@@ -824,23 +832,12 @@ div.container {
   width: 90%;
   margin: 0 auto; }
 
-.logo {
-  width: 150px; }
-  .logo img {
-    width: 100%;
-    height: 100%; }
+.blog-link {
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed; }
 
-form div {
-  display: block; }
-
-form .next_btn {
-  background: none;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  border-bottom: 1px dashed;
-  color: #000; }
-
+/*-----------Site Content--------------------*/
 .d-container {
-  margin-top: 10%; }
+  margin-top: 10%;
+  min-height: 100vh; }
