@@ -23,3 +23,6 @@ ehthumbs.db
 # Ignore packages #
 # =============== #
 node_modules/
+build/css/style.min.css
+build/css/script.min.js
+style.css
