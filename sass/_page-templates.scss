@@ -119,23 +119,31 @@ div.container{
 
 /*--------------- Navigation bar media screens----------*/
 
+/*------Desktop Media Screen------------*/
 @media screen and (min-width: 425px) {
 
-#desktop-navigation {display: flex;}
+        #desktop-navigation {display: flex;}
 
-#mobile-navigation {display: none;}
+        #mobile-navigation {display: none;}
+
+        #moblie-frontpage {display: none;}
 
 };
 
+/*------Mobile Media Screen------------*/
 @media screen and (max-width: 424px) {
   #mobile-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
   #desktop-navigation {
     display: none; 
    }
+
   .scrolled-nav {
     display: none; 
   }  
+
+  #moblie-frontpage {display: block;}
 }

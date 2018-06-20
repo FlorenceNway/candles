@@ -11,41 +11,62 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-
 			<h1>UX Mentoring simplified...</h1>
-			<ul class="intro">
+			<ol class="front_page_intro">
 				<li>Tell us about yourself</li>
 				<li>Get your perfect match</li>
 				<li>Connect with them on Slack</li>
-			</ul>
+			</ol>
 
-		<?php if ( have_posts() ) : ?>
+			<h3>We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="blog-link">the latest posts </h3></a>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+<!------------------Only to show in Mobile view ----------- -->
+		<div class="blog-wrapper" id="moblie-frontpage">
+			<?php $args = array( 'post_type' => 'post','order' =>'ASC')?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			   <?php $posts = new WP_Query( $args );  ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<?php if ( $posts->have_posts() ) : ?>
+				  
+				  <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-			<?php endwhile; ?>
+				  	<div class="single-blog-wrapper">
 
-			<?php the_posts_navigation(); ?>
+				  		<div class="blog-category">
+			        			<?php 
+			        				foreach((get_the_category()) as $category){
+							        echo $category->name."<br>";
+							       }
+							      ?> 
+			        	</div>
 
-		<?php else : ?>
+					    <h3 class="blog-name">
+					    	<a href="<?php echo get_permalink(); ?>" rel="bookmark">
+					    		<?php echo get_the_title(); ?> </a>
+					    </h3>
+			    
+					 	<div class="blog-detail">
+					     	<span class="author">
+					     		<?php 
+					     			$mykey_values = get_post_custom_values( 'author' );
+								  	foreach ( $mykey_values as $key => $value ) {
+								    echo $value; 
+								  }
+					     		?>
+			        		</span>
+			    		</div>
+					</div>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					<div class="feature_img">
+						<a href="<?php echo get_permalink(); ?>" rel="bookmark">
+						<img src="<?php echo get_the_post_thumbnail_url(); ?>" /></a>
+					</div>
+					<a href="<?php echo get_permalink();?>" class="post-btn">READ MORE</a><br><br>
 
-		<?php endif; ?>
-
-
+				  <?php endwhile; ?>
+				<?php endif; ?>
+		</div>
+<!-------------------End Only to show in Mobile view----- -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

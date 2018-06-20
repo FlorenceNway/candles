@@ -1,5 +1,5 @@
 /*!
-Theme Name: Candles Custom Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -11,7 +11,6 @@ Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
@@ -345,9 +344,6 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-a {
-  text-decoration: none; }
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -414,6 +410,16 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+/*-------Form Next Button---*/
+form .next_btn {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border-bottom: 1px dashed;
+  color: #000; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -726,15 +732,10 @@ object {
   background: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
   background: linear-gradient(to right, #01c4d3, #f4c7ee);
   position: fixed;
-  top: 0
-   
-    
+  top: 0;
   left: 0;
   -webkit-transition: height .5s;
   width: 100%;
-
-  
-  
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -753,7 +754,8 @@ object {
 
 .nav-height .logo {
   height: 70px;
-  weight: 60px; }
+  weight: 60px;
+  height: 45px; }
 
 .nav-full-height {
   height: 100vh; }
@@ -802,14 +804,18 @@ div.container {
   color: white; }
 
 /*--------------- Navigation bar media screens----------*/
+/*------Desktop Media Screen------------*/
 @media screen and (min-width: 425px) {
   #desktop-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   #mobile-navigation {
+    display: none; }
+  #moblie-frontpage {
     display: none; } }
 
+/*------Mobile Media Screen------------*/
 @media screen and (max-width: 424px) {
   #mobile-navigation {
     display: -webkit-box;
@@ -818,30 +824,20 @@ div.container {
   #desktop-navigation {
     display: none; }
   .scrolled-nav {
-    display: none; } }
+    display: none; }
+  #moblie-frontpage {
+    display: block; } }
 
 .container {
   width: 90%;
   margin: 0 auto; }
 
-.logo {
-  width: 150px; }
-  .logo img {
-    width: 100%;
-    height: 100%; }
+.blog-link {
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed; }
 
-form div {
-  display: block; }
-
-form .next_btn {
-  background: none;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  border-bottom: 1px dashed;
-  color: #000; }
-
+/*-----------Site Content--------------------*/
 .d-container {
   margin-top: 10%;
   min-height: 100vh; }
