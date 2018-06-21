@@ -874,16 +874,27 @@ nav.nav-height .menu-menu-1-container {
   #moblie-frontpage {
     display: block; } }
 
+/*--------------------------------------------------------------
+# Blog Content
+--------------------------------------------------------------*/
+/*---------front page blogs styling-----------*/
+.single-blog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*-----------Site Content--------------------*/
 .container {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 100px; }
 
 .blog-link {
   text-decoration: underline;
   -webkit-text-decoration-style: dashed;
           text-decoration-style: dashed; }
 
-/*-----------Site Content--------------------*/
+/*-----------Main Content--------------------*/
 .d-container {
-  margin-top: 10%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-top: 150px; }

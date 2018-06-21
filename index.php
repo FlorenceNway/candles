@@ -9,28 +9,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-
-			<?php endif; ?>
-
-			
-			<?php /* Start the Loop */ ?>
-			
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
+		
 		<h1>Blog</h1>
+		<hr>
 		<div class="blog-wrapper">
 			<?php $args = array( 'post_type' => 'post','order' =>'ASC')?>
 
@@ -57,11 +38,8 @@ get_header(); ?>
 					 	<div class="blog-detail">
 					     	<span class="author">
 					     		<?php 
-					     			$mykey_values = get_post_custom_values( 'author' );
-								  	foreach ( $mykey_values as $key => $value ) {
-								    echo $value; 
-								  }
-					     		?>
+					     			echo get_the_author();
+								  ?>
 			        		</span>
 			    		</div>
 

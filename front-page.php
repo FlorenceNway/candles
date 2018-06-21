@@ -9,14 +9,15 @@ get_header(); ?>
 
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+		<main id="main" class="site-main d-container" role="main">
 			<h1>UX Mentoring simplified...</h1>
 			<ol class="front_page_intro">
 				<li>Tell us about yourself</li>
 				<li>Get your perfect match</li>
 				<li>Connect with them on Slack</li>
 			</ol>
+
+			<h3><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="blog-link"> Register for free </a></h3>
 
 			<h3>We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="blog-link">the latest posts </h3></a>
 
@@ -32,37 +33,35 @@ get_header(); ?>
 
 				  	<div class="single-blog-wrapper">
 
-				  		<div class="blog-category">
-			        			<?php 
-			        				foreach((get_the_category()) as $category){
-							        echo $category->name."<br>";
-							       }
-							      ?> 
-			        	</div>
+				  		<div class="left-text-wrapper">
+					  		<div class="blog-category">
+				        			<?php 
+				        				foreach((get_the_category()) as $category){
+								        echo $category->name."<br>";
+								       }
+								      ?> 
+				        	</div>
 
-					    <h3 class="blog-name">
-					    	<a href="<?php echo get_permalink(); ?>" rel="bookmark">
-					    		<?php echo get_the_title(); ?> </a>
-					    </h3>
-			    
-					 	<div class="blog-detail">
-					     	<span class="author">
-					     		<?php 
-					     			$mykey_values = get_post_custom_values( 'author' );
-								  	foreach ( $mykey_values as $key => $value ) {
-								    echo $value; 
-								  }
-					     		?>
-			        		</span>
-			    		</div>
-					</div>
+						    <h3 class="blog-name">
+						    	<a href="<?php echo get_permalink(); ?>" rel="bookmark">
+						    		<?php echo get_the_title(); ?> </a>
+						    </h3>
+				    
+						 	<div class="blog-detail">
+						     	<span class="author">
+						     		<?php 
+						     			echo get_the_author();
+									 ?>
+				        		</span>
+				    		</div>
+						</div>
+				
 
 					<div class="feature_img">
 						<a href="<?php echo get_permalink(); ?>" rel="bookmark">
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>" /></a>
 					</div>
-					<a href="<?php echo get_permalink();?>" class="post-btn">READ MORE</a><br><br>
-
+				</div>
 				  <?php endwhile; ?>
 				<?php endif; ?>
 		</div>

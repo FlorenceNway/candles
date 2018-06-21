@@ -62,10 +62,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
+@import "blog";
 
+/*-----------Site Content--------------------*/
 .container{
 	width: 90%;
 	margin: 0 auto;
+	padding-top: 100px;
 }
 
 .blog-link{
@@ -73,10 +76,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     text-decoration-style: dashed;
 }
 
-/*-----------Site Content--------------------*/
+/*-----------Main Content--------------------*/
 .d-container{
-	margin-top: 10%;
 	min-height:100vh;
+	padding-top: 150px;
+
 }
 
 
