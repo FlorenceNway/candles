@@ -828,6 +828,15 @@ div.container {
   #moblie-frontpage {
     display: block; } }
 
+/*--------------------------------------------------------------
+# Blog Content
+--------------------------------------------------------------*/
+/*---------front page blogs styling-----------*/
+.single-blog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /*-----------Site Content--------------------*/
 .container {
   width: 90%;

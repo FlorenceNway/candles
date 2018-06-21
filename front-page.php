@@ -33,34 +33,35 @@ get_header(); ?>
 
 				  	<div class="single-blog-wrapper">
 
-				  		<div class="blog-category">
-			        			<?php 
-			        				foreach((get_the_category()) as $category){
-							        echo $category->name."<br>";
-							       }
-							      ?> 
-			        	</div>
+				  		<div class="left-text-wrapper">
+					  		<div class="blog-category">
+				        			<?php 
+				        				foreach((get_the_category()) as $category){
+								        echo $category->name."<br>";
+								       }
+								      ?> 
+				        	</div>
 
-					    <h3 class="blog-name">
-					    	<a href="<?php echo get_permalink(); ?>" rel="bookmark">
-					    		<?php echo get_the_title(); ?> </a>
-					    </h3>
-			    
-					 	<div class="blog-detail">
-					     	<span class="author">
-					     		<?php 
-					     			echo get_the_author();
-								 ?>
-			        		</span>
-			    		</div>
-					</div>
+						    <h3 class="blog-name">
+						    	<a href="<?php echo get_permalink(); ?>" rel="bookmark">
+						    		<?php echo get_the_title(); ?> </a>
+						    </h3>
+				    
+						 	<div class="blog-detail">
+						     	<span class="author">
+						     		<?php 
+						     			echo get_the_author();
+									 ?>
+				        		</span>
+				    		</div>
+						</div>
+				
 
 					<div class="feature_img">
 						<a href="<?php echo get_permalink(); ?>" rel="bookmark">
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>" /></a>
 					</div>
-					<a href="<?php echo get_permalink();?>" class="post-btn">READ MORE</a><br><br>
-
+				</div>
 				  <?php endwhile; ?>
 				<?php endif; ?>
 		</div>
