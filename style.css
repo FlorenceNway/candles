@@ -1,14 +1,17 @@
 /*!
-Theme Name: Candles Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Darragh McAlone, Florence Nway
-Description: A custom theme created for Candles, the community forum for UXers.
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
 
-Candles Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -23,21 +26,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-  ## Links
-  ## Menus
+	## Links
+	## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-  ## Posts and pages
-  ## Asides
-  ## Comments
+	## Posts and pages
+	## Asides
+	## Comments
 # Media
-  ## Captions
-  ## Galleries
+	## Captions
+	## Galleries
 # Page Templates
-  ## Front page
+	## Front page
 --------------------------------------------------------------*/
 html {
   font-family: sans-serif;
@@ -513,6 +516,22 @@ a {
   text-align: right;
   width: 50%; }
 
+/*Mobile overlay menu*/
+nav .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -712,8 +731,21 @@ object {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.9); }
+  background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
+  background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+  right: 600; }
+
+footer #mobile-navigation {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .overlay .closebtn {
   position: absolute;
@@ -745,6 +777,9 @@ object {
   margin-top: 25px; }
   #desktop-navigation div.menu-menu-1-container {
     display: none; }
+
+.nav {
+  margin-left: 3%; }
 
 .nav-height {
   height: 70px; }
@@ -806,11 +841,21 @@ div.container {
   #desktop-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   #mobile-navigation {
     display: none; }
   #moblie-frontpage {
-    display: none; } }
+    display: none; }
+  nav.nav-height .menu-menu-1-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 424px) {

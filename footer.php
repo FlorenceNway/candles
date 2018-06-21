@@ -18,13 +18,14 @@
 
 					<!-- I added a close button 20/06/18  -->
 					
-			<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">Closee</a>
+			<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">Close</a>
 					
 					<div class="mobile-menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 
 					</div>
+					<span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
 					
 				</nav><!-- #site-navigation -->
 				 <!-- Added a open button 20/06/18-->
