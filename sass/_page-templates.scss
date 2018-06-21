@@ -59,7 +59,6 @@ footer #mobile-navigation{
     left: 0;
     -webkit-transition: height .5s;
     width: 100%;
-  
     justify-content: center;
     align-items: center;
     -webkit-transition: height .5s, line-height .5s; 
@@ -133,11 +132,12 @@ div.container{
 @media screen and (min-width: 425px) {
 
         #desktop-navigation {
-            display: flex;
-            justify-content: flex-start;
+            display: flex;}
 
-        }
-
+            .nav-full-height{
+            justify-content: flex-start;}
+            
+}
         #mobile-navigation {display: none;}
 
         #moblie-frontpage {display: none;}
@@ -149,7 +149,7 @@ div.container{
                     }
         }
 
-        };
+        
 
 /*------Mobile Media Screen------------*/
 

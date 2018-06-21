@@ -841,21 +841,25 @@ div.container {
   #desktop-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex; }
+  .nav-full-height {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
-  #mobile-navigation {
-    display: none; }
-  #moblie-frontpage {
-    display: none; }
-  nav.nav-height .menu-menu-1-container {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; } }
+            justify-content: flex-start; } }
+
+#mobile-navigation {
+  display: none; }
+
+#moblie-frontpage {
+  display: none; }
+
+nav.nav-height .menu-menu-1-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 424px) {
