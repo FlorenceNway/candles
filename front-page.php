@@ -9,8 +9,7 @@ get_header(); ?>
 
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<br>
+		<main id="main" class="site-main d-container" role="main">
 			<h1>UX Mentoring simplified...</h1>
 			<ol class="front_page_intro">
 				<li>Tell us about yourself</li>
