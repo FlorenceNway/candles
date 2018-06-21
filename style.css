@@ -828,6 +828,7 @@ div.container {
   #moblie-frontpage {
     display: block; } }
 
+/*-----------Site Content--------------------*/
 .container {
   width: 90%;
   margin: 0 auto;
@@ -838,7 +839,7 @@ div.container {
   -webkit-text-decoration-style: dashed;
           text-decoration-style: dashed; }
 
-/*-----------Site Content--------------------*/
+/*-----------Main Content--------------------*/
 .d-container {
   min-height: 100vh;
   padding-top: 150px; }

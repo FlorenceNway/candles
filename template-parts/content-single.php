@@ -9,9 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		
-		<div class="single-blog-wrapper">
+			<div class="single-blog-wrapper">
 
 				  		<div class="blog-category">
 			        			<?php 
@@ -20,6 +18,8 @@
 							       }
 							      ?> 
 			        	</div>
+
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 						<div class="blog-detail">
 					     	<span class="author">
@@ -35,7 +35,7 @@
 							<?php endif; ?>
 						</div>
 				    	
-		</div>
+			</div>
 
 	</header><!-- .entry-header -->
 
