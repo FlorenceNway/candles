@@ -131,6 +131,16 @@ div.container{
 /*------Desktop Media Screen------------*/
 @media screen and (min-width: 425px) {
 
+        .container{
+            padding-top: unset;
+            padding-top: 100px;
+        }
+
+        .d-container{
+            padding-top: unset;
+            padding-top: 180px;
+        }  
+
         #desktop-navigation {
             display: flex;}
 
@@ -154,18 +164,22 @@ div.container{
 /*------Mobile Media Screen------------*/
 
 @media screen and (max-width: 424px) {
-  #mobile-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
 
-  #desktop-navigation {
-    display: none; 
-   }
+      .container{
+            padding-top: unset;
+        }
 
-  .scrolled-nav {
-    display: none; 
-  }  
+      .d-container{
+            padding-top: unset;
+      }  
+
+      #desktop-navigation {
+        display: none; 
+       }
+
+      .scrolled-nav {
+        display: none; 
+      }  
 
   #moblie-frontpage {display: block;}
 }
