@@ -9,15 +9,34 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+			<div class="single-blog-wrapper">
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				  		<div class="blog-category">
+			        			<?php 
+			        				foreach((get_the_category()) as $category){
+							        	echo $category->name."<br>";
+							       }
+							      ?> 
+			        	</div>
 
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+						<div class="blog-detail">
+					     	<span class="author">
+					     		<?php 
+					     			echo get_the_author();
+								  ?>
+			        		</span>
+			    		</div>
+
+						<div class="first-single-image">
+				        	<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail(); ?>
+							<?php endif; ?>
+						</div>
+				    	
+			</div>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
