@@ -10,13 +10,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<br>
 			<h1>UX Mentoring simplified...</h1>
 			<ol class="front_page_intro">
 				<li>Tell us about yourself</li>
 				<li>Get your perfect match</li>
 				<li>Connect with them on Slack</li>
 			</ol>
+
+			<h3><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="blog-link"> Register for free </a></h3>
 
 			<h3>We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="blog-link">the latest posts </h3></a>
 
