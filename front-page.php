@@ -17,9 +17,9 @@ get_header(); ?>
 				<li>Connect with them on Slack</li>
 			</ol>
 
-			<h3><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="blog-link"> Register for free </a></h3>
+			<h3><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a></h3>
 
-			<h3>We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="blog-link">the latest posts </h3></a>
+			<h3>We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </h3></a>
 
 <!------------------Only to show in Mobile view ----------- -->
 		<div class="blog-wrapper" id="moblie-frontpage">
@@ -31,7 +31,7 @@ get_header(); ?>
 				  
 				  <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-				  	<div class="single-blog-wrapper">
+				  	<div class="single-blog-wrapper blog_in_front_page">
 
 				  		<div class="left-text-wrapper">
 					  		<div class="blog-category">
