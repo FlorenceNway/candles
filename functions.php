@@ -93,10 +93,14 @@ function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 
+
 /**
  * Enqueue scripts and styles.
  */
 function candles_scripts() {
+	@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 	wp_enqueue_script('jquery');
 	wp_enqueue_style( 'candles-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'font_awesome','https://use.fontawesome.com/releases/v5.0.13/css/all.css' );
