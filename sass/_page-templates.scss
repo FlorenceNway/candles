@@ -82,6 +82,9 @@ weight: 60px;
 }
 .nav-full-height {
     height: 100vh;
+    .logo{
+    width: 247.5px;
+    }
 }
 
 @-webkit-keyframes fadein {
@@ -109,13 +112,16 @@ weight: 60px;
 			div.menu-menu-1-container{
 						display: block;
 		  	}
+.mentor-content{
+    display: none;
+}
 }
 
 .menu-toggle:click{
 	display: block;
 }
 
-div.container{
+div.container.box{
 	display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -147,6 +153,9 @@ div.container{
                                 display: flex !important;
                                 align-items: center;
                     }
+                    p{
+                        display: none;
+                    }
         }
 
         
@@ -155,9 +164,7 @@ div.container{
 
 @media screen and (max-width: 424px) {
   #mobile-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+   }
 
   #desktop-navigation {
     display: none; 
@@ -168,4 +175,10 @@ div.container{
   }  
 
   #moblie-frontpage {display: block;}
+}
+footer{
+    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+    color: white;
+    display: flex;
+    text-align: center;
 }

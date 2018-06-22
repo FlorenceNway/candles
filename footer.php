@@ -29,7 +29,7 @@
 					
 				</nav><!-- #site-navigation -->
 				 <!-- Added a open button 20/06/18-->
-		<span id="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		<span id="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
