@@ -52,7 +52,7 @@ footer #mobile-navigation{
 }
 
 /*-----------Desktop nav------------------------*/
-#desktop-navigation{
+.nav-full-height{
     background: linear-gradient(to right, #01c4d3, #f4c7ee);
     position: fixed;
     top: 0;
@@ -73,7 +73,12 @@ footer #mobile-navigation{
     margin-left: 3%;
 }
 .nav-height {
-	height:70px;
+    background: linear-gradient(to right, #01c4d3, #f4c7ee);
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height:12%;
 }
 .nav-height .logo {
 height: 70px;
@@ -131,7 +136,13 @@ div.container.box{
 	 margin-left: 25px;
 	 color: white;
 }
-
+#mobile-navigation a{
+    margin: 0;
+}
+#mobile-navigation ul{
+    margin: 0;
+    padding:0;
+}
 /*--------------- Navigation bar media screens----------*/
 
 /*------Desktop Media Screen------------*/
@@ -150,13 +161,10 @@ div.container.box{
         #desktop-navigation {
             display: flex;}
 
-            .nav-full-height{
-            justify-content: flex-start;}
             
-}
-        #mobile-navigation {display: none;}
+            
 
-        #moblie-frontpage {display: none;}
+        #mobile-block {display: none;}
 
         nav.nav-height {
                     .menu-menu-1-container{
@@ -168,7 +176,7 @@ div.container.box{
                     }
         }
 
-        
+        }
 
 /*------Mobile Media Screen------------*/
 
@@ -191,11 +199,16 @@ div.container.box{
       }  
 
 
-  #moblie-frontpage {display: block;}
-}
+  #moblie-block { display: block;}
+
+  ul li{ list-style: none}
+  
+
 footer{
     background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
     color: white;
     display: flex;
     text-align: center;
+    
+}
 }
