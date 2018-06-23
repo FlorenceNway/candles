@@ -705,7 +705,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-/*---------front page styling -----------*/
 /*------------Mobile Nav----------------------*/
 .mobile-menu {
   height: 84%;
@@ -824,9 +823,8 @@ footer #mobile-navigation {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10%;
-  top: 0;
-  margin-top: 25px; }
+  height: 16%;
+  top: 0; }
 
 .nav-height .logo {
   height: 70px;
@@ -858,8 +856,8 @@ footer #mobile-navigation {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 90px !important;
-  line-height: 60px !important; }
+  height: 20% !important;
+  line-height: 93px !important; }
 
 .scrolled-nav .logo {
   width: 60px; }
@@ -923,9 +921,6 @@ div.container.box {
   nav.nav-height p {
     display: none; } }
 
-.simplified_text {
-  display: none; }
-
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 425px) {
   .container {
@@ -936,23 +931,18 @@ div.container.box {
     display: none; }
   .scrolled-nav {
     display: none; }
-
   #moblie-block {
     display: block; }
   ul li {
     list-style: none; }
-  .simplified_text {
-    display: block; } }
-
-footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
-  background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center; }
-
+  footer {
+    background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
+    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center; } }
 
 /*--------------------------------------------------------------
 # Blog Content
