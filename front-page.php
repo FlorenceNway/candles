@@ -10,7 +10,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main d-container" role="main">
-			<h1>UX Mentoring simplified...</h1>
+			<h1 class="simplified_text">UX Mentoring simplified...</h1>
+
 			<ol class="front_page_intro">
 				<li>Tell us about yourself</li>
 				<li>Get your perfect match</li>
@@ -71,3 +72,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 		
 <?php get_footer(); ?>
+
+<select>
+	<option value="mentor">Mentor</option>
+</select>
