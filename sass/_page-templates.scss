@@ -5,14 +5,29 @@
 /* Front page */
 /*------------Mobile Nav----------------------*/
 .mobile-menu{
-    height: 50%;
-    a{
-    color: red;
+    height: 84%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+     .menu-menu-2-container{
+        font-size: 44px;
+        line-height: 1.5;
+        }
     }
+.mobile-logo{
+    width: 85%;
+    text-align: left;
+    padding-top: 40px;
 }
-#mobile-navigation a{
-    color: black;
+.mobile-close{
+    font-size: 34px;
+    margin-top: 55px;
+    a{color: white;
 }
+}
+
 .scrolled-nav{
 div.menu-menu-1-container {
     display: block !important;
@@ -37,18 +52,18 @@ div.menu-menu-1-container {
 }
 footer #mobile-navigation{
     
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: end;
     align-items: center;
+img{
+    height: 70px;
+}
 }
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-}
-.mobile-menu{
-  position: relative;
 }
 
 /*-----------Desktop nav------------------------*/
@@ -71,6 +86,12 @@ footer #mobile-navigation{
 }
 .nav{
     margin-left: 3%;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.mentor-text{
+    padding-top: 10px;
 }
 .nav-height {
     background: linear-gradient(to right, #01c4d3, #f4c7ee);
@@ -78,8 +99,11 @@ footer #mobile-navigation{
     display: flex;
     justify-content: left;
     align-items: center;
-    height:12%;
+    height: 10%;
+    top: 0;
+    margin-top: 25px;
 }
+
 .nav-height .logo {
 height: 70px;
 weight: 60px;
@@ -103,9 +127,11 @@ weight: 60px;
 }
 
 .scrolled-nav {
-        justify-content: left !important;
+        flex-direction: column!important;
+        align-items: flex-start;
         height: 90px !important;
         line-height: 60px !important;
+       
   
 }
   
@@ -138,6 +164,7 @@ div.container.box{
 }
 #mobile-navigation a{
     margin: 0;
+    color: white;
 }
 #mobile-navigation ul{
     margin: 0;
@@ -146,7 +173,7 @@ div.container.box{
 /*--------------- Navigation bar media screens----------*/
 
 /*------Desktop Media Screen------------*/
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
 
         .container{
             padding-top: unset;
@@ -159,9 +186,13 @@ div.container.box{
         }  
 
         #desktop-navigation {
-            display: flex;}
-
-            
+            display: flex;
+        }
+        .scrolled-nav{
+            .mentor-text{
+            display: none;
+        }
+        }
             
 
         #mobile-block {display: none;}
@@ -180,7 +211,7 @@ div.container.box{
 
 /*------Mobile Media Screen------------*/
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 425px) {
 
       .container{
             padding-top: unset;

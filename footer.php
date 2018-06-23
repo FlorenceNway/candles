@@ -17,14 +17,16 @@
 				<nav id="mobile-navigation" class="overlay" role="navigation">
 
 					<!-- I added a close button 20/06/18  -->
-					
-			
-					
-					<div class="mobile-menu">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">Close</a>
+					<div class="mobile-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/white_logo.svg" alt="Candles logo" class="logo">
+					</div>	
 
+					<section class="mobile-menu">
+					<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
+					<div class="mobile-close">
+					<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">Close</a>
 					</div>
+					</scetion>
 				
 				</nav><!-- #site-navigation -->
 				 <!-- Added a open button 20/06/18-->
