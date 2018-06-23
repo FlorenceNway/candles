@@ -11,14 +11,29 @@
 
 /*------------Mobile Nav----------------------*/
 .mobile-menu{
-    height: 50%;
-    a{
-    color: red;
+    height: 84%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+     .menu-menu-2-container{
+        font-size: 44px;
+        line-height: 1.5;
+        }
     }
+.mobile-logo{
+    width: 85%;
+    text-align: left;
+    padding-top: 40px;
 }
-#mobile-navigation a{
-    color: black;
+.mobile-close{
+    font-size: 34px;
+    margin-top: 55px;
+    a{color: white;
 }
+}
+
 .scrolled-nav{
 div.menu-menu-1-container {
     display: block !important;
@@ -43,9 +58,12 @@ div.menu-menu-1-container {
 }
 footer #mobile-navigation{
     
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: end;
     align-items: center;
+img{
+    height: 70px;
+}
 }
 .overlay .closebtn {
     position: absolute;
@@ -53,12 +71,9 @@ footer #mobile-navigation{
     right: 45px;
     font-size: 60px;
 }
-.mobile-menu{
-  position: relative;
-}
 
 /*-----------Desktop nav------------------------*/
-#desktop-navigation{
+.nav-full-height{
     background: linear-gradient(to right, #01c4d3, #f4c7ee);
     position: fixed;
     top: 0;
@@ -77,10 +92,24 @@ footer #mobile-navigation{
 }
 .nav{
     margin-left: 3%;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.mentor-text{
+    padding-top: 10px;
 }
 .nav-height {
-	height:70px;
+    background: linear-gradient(to right, #01c4d3, #f4c7ee);
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10%;
+    top: 0;
+    margin-top: 25px;
 }
+
 .nav-height .logo {
 height: 70px;
 weight: 60px;
@@ -104,9 +133,11 @@ weight: 60px;
 }
 
 .scrolled-nav {
-        justify-content: left !important;
+        flex-direction: column!important;
+        align-items: flex-start;
         height: 90px !important;
         line-height: 60px !important;
+       
   
 }
   
@@ -137,11 +168,18 @@ div.container.box{
 	 margin-left: 25px;
 	 color: white;
 }
-
+#mobile-navigation a{
+    margin: 0;
+    color: white;
+}
+#mobile-navigation ul{
+    margin: 0;
+    padding:0;
+}
 /*--------------- Navigation bar media screens----------*/
 
 /*------Desktop Media Screen------------*/
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
 
         .container{
             padding-top: unset;
@@ -154,15 +192,16 @@ div.container.box{
         }  
 
         #desktop-navigation {
-            display: flex;}
-
-            .nav-full-height{
-            justify-content: flex-start;}
+            display: flex;
+        }
+        .scrolled-nav{
+            .mentor-text{
+            display: none;
+        }
+        }
             
-}
-        #mobile-navigation {display: none;}
 
-        #moblie-frontpage {display: none;}
+        #mobile-block {display: none;}
 
         nav.nav-height {
                     .menu-menu-1-container{
@@ -176,11 +215,12 @@ div.container.box{
 
         .simplified_text{
             display: none;
+
         }
 
 /*------Mobile Media Screen------------*/
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 425px) {
 
       .container{
             padding-top: unset;
@@ -198,6 +238,12 @@ div.container.box{
         display: none; 
       }  
 
+
+
+  #moblie-block { display: block;}
+
+  ul li{ list-style: none}
+  
   #moblie-frontpage {display: block;}
 
   .simplified_text {display: block;}
@@ -208,4 +254,6 @@ footer{
     color: white;
     display: flex;
     text-align: center;
+    
+}
 }
