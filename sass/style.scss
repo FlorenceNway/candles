@@ -81,4 +81,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	
 }
 
+h3{
+	font-size: 1.3rem;
+	line-height: 1.2;
+}
+
+.link:active,.link:visited{
+	color: #000;
+	font-weight: bold;
+}
 

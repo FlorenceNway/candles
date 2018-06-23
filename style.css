@@ -705,6 +705,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*---------front page styling -----------*/
 /*------------Mobile Nav----------------------*/
 .mobile-menu {
   height: 84%;
@@ -922,6 +923,9 @@ div.container.box {
   nav.nav-height p {
     display: none; } }
 
+.simplified_text {
+  display: none; }
+
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 425px) {
   .container {
@@ -932,31 +936,36 @@ div.container.box {
     display: none; }
   .scrolled-nav {
     display: none; }
+
   #moblie-block {
     display: block; }
   ul li {
     list-style: none; }
-  footer {
-    background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
-    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center; } }
+  .simplified_text {
+    display: block; } }
+
+footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
+  background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+
 
 /*--------------------------------------------------------------
 # Blog Content
 --------------------------------------------------------------*/
-/*---------front page blogs styling-----------*/
+/*---------front page blogs styling (display block in mobile)-----------*/
 .blog_in_front_page {
-  margin-top: 50px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 200px; }
+  height: 150px; }
   .blog_in_front_page h3 {
-    font-size: 1.5em; }
+    font-size: 1.3em; }
   .blog_in_front_page .left-text-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 49%;
@@ -965,6 +974,10 @@ div.container.box {
     -webkit-box-flex: 0;
         -ms-flex: 0 49%;
             flex: 0 49%; }
+
+.single-blog-wrapper {
+  border-top: 1px solid #000;
+  padding-top: 10px; }
 
 /*-----------Site Content--------------------*/
 .container {
@@ -979,3 +992,11 @@ div.container.box {
 /*-----------Main Content--------------------*/
 .d-container {
   min-height: 100vh; }
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.2; }
+
+.link:active, .link:visited {
+  color: #000;
+  font-weight: bold; }

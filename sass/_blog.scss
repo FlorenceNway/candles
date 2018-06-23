@@ -2,16 +2,17 @@
 # Blog Content
 --------------------------------------------------------------*/
 
-/*---------front page blogs styling-----------*/
+/*---------front page blogs styling (display block in mobile)-----------*/
 
 .blog_in_front_page{
-	margin-top: 50px;
+	margin-top: 40px;
 	display: flex;
-	height: 200px;
+	height: 150px;
 
 	h3{
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
+	
 	.left-text-wrapper{
 		flex: 0 49%;
 	}
@@ -21,3 +22,9 @@
 	}
 
 }
+
+.single-blog-wrapper{
+	border-top: 1px solid #000;
+	padding-top: 10px;
+}
+
