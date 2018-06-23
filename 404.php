@@ -14,11 +14,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					<h1 class="page-title"><?php echo esc_html( 'Uh oh Spaghettio!' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+					<p><?php echo esc_html( 'Page not found.You may have mistyped the address or the page may have moved. Or maybe, just maybe, someone provided you with a hoax link? How about we just start again and go to the home page?' ); ?></p>
 
 					<?php get_search_form(); ?>
 

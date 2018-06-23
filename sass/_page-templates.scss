@@ -3,6 +3,12 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+/*---------front page styling -----------*/
+
+
+
+
 /*------------Mobile Nav----------------------*/
 .mobile-menu{
     height: 50%;
@@ -168,7 +174,9 @@ div.container.box{
                     }
         }
 
-        
+        .simplified_text{
+            display: none;
+        }
 
 /*------Mobile Media Screen------------*/
 
@@ -190,9 +198,11 @@ div.container.box{
         display: none; 
       }  
 
-
   #moblie-frontpage {display: block;}
+
+  .simplified_text {display: block;}
 }
+
 footer{
     background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
     color: white;
