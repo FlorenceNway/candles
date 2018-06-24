@@ -704,8 +704,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-/*---------front page styling -----------*/
 /*------------Mobile Nav----------------------*/
 .mobile-menu {
   height: 84%;
@@ -873,7 +871,7 @@ footer #mobile-navigation {
 .menu-toggle:click {
   display: block; }
 
-div.container.box {
+.box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,7 +986,7 @@ footer {
   padding-top: 10px; }
 
 /*-----------Site Content--------------------*/
-.container {
+.site-container {
   width: 90%;
   margin: 0 auto; }
 
@@ -1008,6 +1006,9 @@ h3 {
 .link:active, .link:visited {
   color: #000;
   font-weight: bold; }
+
+.fa-arrow-right {
+  font-size: 0.8em; }
 
 /*-----------Front page----------------*/
 ol.front_page_intro {

@@ -65,7 +65,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "blog";
 
 /*-----------Site Content--------------------*/
-.container{
+.site-container{
 	width: 90%;
 	margin: 0 auto;
 }
@@ -89,6 +89,10 @@ h3{
 .link:active,.link:visited{
 	color: #000;
 	font-weight: bold;
+}
+
+.fa-arrow-right{
+	font-size: 0.8em;
 }
 
 /*-----------Front page----------------*/
