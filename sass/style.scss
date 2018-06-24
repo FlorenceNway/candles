@@ -65,6 +65,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "blog";
 
 /*-----------Site Content--------------------*/
+
+body{
+	font-family: $ibm !important;
+}
+
 .site-container{
 	width: 90%;
 	margin: 0 auto;

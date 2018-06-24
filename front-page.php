@@ -18,7 +18,7 @@ get_header(); ?>
 				<li>Connect with them on Slack</li>
 			</ol>
 
-			<h4 class="register_text"><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a></h4>
+			<h4 class="register_text"><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a><i class="fas fa-arrow-right"></i></h4>
 
 			<p class="front_latest_post_link">We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </p></a>
 

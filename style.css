@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -986,6 +987,9 @@ footer {
   padding-top: 10px; }
 
 /*-----------Site Content--------------------*/
+body {
+  font-family: "IBM Plex Sans", sans-serif !important; }
+
 .site-container {
   width: 90%;
   margin: 0 auto; }
