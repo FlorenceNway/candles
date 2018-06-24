@@ -924,11 +924,11 @@ div.container.box {
     display: none; }
   .simplified_text {
     display: none; }
-  .register_text_mobileview {
-    padding: 50px 0 100px 0; }
-  /*------Mobile Media Screen------------*/ }
+  .register_text {
+    padding: 50px 0 100px 0; } }
 
-@media screen and (min-width: 426px) and (max-width: 425px) {
+/*------Mobile Media Screen------------*/
+@media screen and (max-width: 425px) {
   .container {
     padding-top: unset; }
   .d-container {
@@ -944,38 +944,44 @@ div.container.box {
   #moblie-frontpage {
     display: block; }
   .simplified_text {
-    display: block; } }
-
-@media screen and (min-width: 426px) {
+    display: block; }
   footer {
-    background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
-    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center; } }
+    position: fixed;
+    bottom: 0;
+    width: 100%; } }
+
+footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
+  background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Blog Content
 --------------------------------------------------------------*/
 /*---------front page blogs styling (display block in mobile)-----------*/
-.blog_in_front_page {
+.blog-wrapper {
   margin-top: 40px;
+  margin-bottom: 40px; }
+
+.blog_in_front_page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 150px; }
   .blog_in_front_page h3 {
-    font-size: 1.3em; }
+    font-size: 1.2em; }
   .blog_in_front_page .left-text-wrapper {
     -webkit-box-flex: 0;
-        -ms-flex: 0 49%;
-            flex: 0 49%; }
+        -ms-flex: 0 55%;
+            flex: 0 55%; }
   .blog_in_front_page .feature_img {
     -webkit-box-flex: 0;
-        -ms-flex: 0 49%;
-            flex: 0 49%; }
+        -ms-flex: 0 44%;
+            flex: 0 44%; }
 
 .single-blog-wrapper {
   border-top: 1px solid #000;
@@ -1004,11 +1010,11 @@ h3 {
   font-weight: bold; }
 
 /*-----------Front page----------------*/
-ol {
+ol.front_page_intro {
   padding-left: 20px;
   margin-left: 0; }
-  ol li {
-    font-size: 1.5em; }
+  ol.front_page_intro li {
+    font-size: 1.2em; }
 
 .front_latest_post_link {
   font-size: 1.5rem; }

@@ -216,10 +216,10 @@ div.container.box{
 
         .simplified_text{ display: none;}
 
-        .register_text_mobileview{
+        .register_text{
                 padding: 50px 0 100px 0;
         }
-
+}
 /*------Mobile Media Screen------------*/
 
 @media screen and (max-width: 425px) {
@@ -249,13 +249,20 @@ div.container.box{
   #moblie-frontpage {display: block;}
 
   .simplified_text {display: block;}
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
 }
+
+
 
 footer{
     background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
     color: white;
     display: flex;
     text-align: center;
-    
-}
 }

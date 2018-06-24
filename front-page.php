@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main d-container" role="main">
-			<h1 class="simplified_text">UX Mentoring simplified...</h1>
+			<h3 class="simplified_text">UX Mentoring simplified...</h3>
 
 			<ol class="front_page_intro">
 				<li>Tell us about yourself</li>
@@ -18,7 +18,7 @@ get_header(); ?>
 				<li>Connect with them on Slack</li>
 			</ol>
 
-			<h3 class="register_text_mobileview"><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a></h3>
+			<h4 class="register_text"><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a></h4>
 
 			<p class="front_latest_post_link">We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </p></a>
 
@@ -48,13 +48,12 @@ get_header(); ?>
 						    		<?php echo get_the_title(); ?> </a>
 						    </h3>
 				    
-						 	<div class="blog-detail">
-						     	<span class="author">
+						    <span class="author">
 						     		<?php 
 						     			echo get_the_author();
 									 ?>
-				        		</span>
-				    		</div>
+				        	</span>
+				    		
 						</div>
 				
 
