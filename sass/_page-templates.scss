@@ -182,22 +182,21 @@ div.container.box{
 @media screen and (min-width: 426px) {
 
         .container{
-            padding-top: unset;
             padding-top: 100px;
         }
 
         .d-container{
-            padding-top: unset;
             padding-top: 180px;
         }  
 
         #desktop-navigation {
             display: flex;
         }
+
         .scrolled-nav{
-            .mentor-text{
-            display: none;
-        }
+                .mentor-text{
+                     display: none;
+                }
         }
             
 
@@ -213,9 +212,12 @@ div.container.box{
                     }
         }
 
-        .simplified_text{
-            display: none;
+        #moblie-frontpage {display: none;}
 
+        .simplified_text{ display: none;}
+
+        .register_text_mobileview{
+                padding: 50px 0 100px 0;
         }
 
 /*------Mobile Media Screen------------*/

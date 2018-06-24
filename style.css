@@ -900,10 +900,8 @@ div.container.box {
 /*------Desktop Media Screen------------*/
 @media screen and (min-width: 426px) {
   .container {
-    padding-top: unset;
     padding-top: 100px; }
   .d-container {
-    padding-top: unset;
     padding-top: 180px; }
   #desktop-navigation {
     display: -webkit-box;
@@ -921,13 +919,16 @@ div.container.box {
         -ms-flex-align: center;
             align-items: center; }
   nav.nav-height p {
-    display: none; } }
+    display: none; }
+  #moblie-frontpage {
+    display: none; }
+  .simplified_text {
+    display: none; }
+  .register_text_mobileview {
+    padding: 50px 0 100px 0; }
+  /*------Mobile Media Screen------------*/ }
 
-.simplified_text {
-  display: none; }
-
-/*------Mobile Media Screen------------*/
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 426px) and (max-width: 425px) {
   .container {
     padding-top: unset; }
   .d-container {
@@ -936,23 +937,24 @@ div.container.box {
     display: none; }
   .scrolled-nav {
     display: none; }
-
   #moblie-block {
     display: block; }
   ul li {
     list-style: none; }
+  #moblie-frontpage {
+    display: block; }
   .simplified_text {
     display: block; } }
 
-footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
-  background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center; }
-
+@media screen and (min-width: 426px) {
+  footer {
+    background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
+    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center; } }
 
 /*--------------------------------------------------------------
 # Blog Content
@@ -1000,3 +1002,13 @@ h3 {
 .link:active, .link:visited {
   color: #000;
   font-weight: bold; }
+
+/*-----------Front page----------------*/
+ol {
+  padding-left: 20px;
+  margin-left: 0; }
+  ol li {
+    font-size: 1.5em; }
+
+.front_latest_post_link {
+  font-size: 1.5rem; }

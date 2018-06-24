@@ -18,9 +18,9 @@ get_header(); ?>
 				<li>Connect with them on Slack</li>
 			</ol>
 
-			<h3><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a></h3>
+			<h3 class="register_text_mobileview"><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a></h3>
 
-			<h3>We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </h3></a>
+			<p class="front_latest_post_link">We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </p></a>
 
 <!------------------Only to show in Mobile view ----------- -->
 		<div class="blog-wrapper" id="moblie-frontpage">
@@ -73,6 +73,3 @@ get_header(); ?>
 		
 <?php get_footer(); ?>
 
-<select>
-	<option value="mentor">Mentor</option>
-</select>
