@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main content-container" role="main">
 
 			<h1>Great!</h1>
 			<p><?php echo CFS()->get( 'success_message' ); ?></p>
