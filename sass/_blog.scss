@@ -4,21 +4,25 @@
 
 /*---------front page blogs styling (display block in mobile)-----------*/
 
-.blog_in_front_page{
+.blog-wrapper{
 	margin-top: 40px;
-	display: flex;
-	height: 150px;
+	margin-bottom: 40px;
+}
+
+.blog_in_front_page{
+		display: flex;
+		height: 150px;
 
 	h3{
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 	
 	.left-text-wrapper{
-		flex: 0 49%;
+		flex: 0 55%;
 	}
 
 	.feature_img{
-		flex: 0 49%;
+		flex: 0 44%;
 	}
 
 }
@@ -28,3 +32,6 @@
 	padding-top: 10px;
 }
 
+.content-container{
+	padding-top: 100px;
+}
