@@ -8,13 +8,14 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main content-container" role="main">
 
 		<div class="register">
 			<h3>Register for free</h3>
 			<p>Some body copy about registering for a service that has thousands of people already engaging in Slack.</p>
-			<h3><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="blog-link"> Register for free </a></h3>
+			<h4><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a><i class="fas fa-arrow-right"></i></h4>
 		</div>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>

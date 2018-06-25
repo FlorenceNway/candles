@@ -45,4 +45,4 @@
 			
 		</header><!-- #masthead -->
 		
-		<div id="content" class="site-content container box">
+		<div id="content" class="site-content site-container box">

@@ -2,7 +2,8 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+
+
 /*------------Mobile Nav----------------------*/
 .mobile-menu{
     height: 84%;
@@ -152,8 +153,10 @@ width: 60px;
     display: block;
 }
 
-div.box{
-    display: flex;
+
+.box{
+	display: flex;
+
     align-items: flex-end;
     justify-content: center;
 }
@@ -176,22 +179,21 @@ div.box{
 @media screen and (min-width: 426px) {
 
         .container{
-            padding-top: unset;
             padding-top: 100px;
         }
 
         .d-container{
-            padding-top: unset;
             padding-top: 180px;
         }  
 
         #desktop-navigation {
             display: flex;
         }
+
         .scrolled-nav{
-            .mentor-text{
-            display: none;
-        }
+                .mentor-text{
+                     display: none;
+                }
         }
             
 
@@ -207,8 +209,15 @@ div.box{
                     }
         }
 
-        }
 
+        #moblie-frontpage {display: none;}
+
+        .simplified_text{ display: none;}
+
+        .register_text{
+                padding: 50px 0 100px 0;
+        }
+}
 /*------Mobile Media Screen------------*/
 
 @media screen and (max-width: 425px) {
@@ -234,12 +243,23 @@ div.box{
 
   ul li{ list-style: none}
   
+  #moblie-frontpage {display: block;}
+
+  .simplified_text {display: block;}
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+}
+
+
 
 footer{
     background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
     color: white;
     display: flex;
     text-align: center;
-    
-}
 }
