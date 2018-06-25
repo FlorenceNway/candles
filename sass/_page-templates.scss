@@ -81,6 +81,7 @@ img{
     transition: height .5s, line-height .5s;
     top: 0;
     margin-top: 25px;
+    color: white;
     div.menu-menu-1-container {
         display:none;
     }
@@ -100,8 +101,10 @@ img{
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 16%;
     top: 0;
+    height: 10%;
+    padding-left: 3%;
+    margin-top: 25px;
 }
 
 
@@ -111,6 +114,7 @@ width: 60px;
 
 }
 .nav-full-height {
+    flex-direction: column;
     height: 100vh;
     .logo{
     width: 247.5px;
@@ -126,15 +130,15 @@ width: 60px;
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
-.scrolled-nav {
-        flex-direction: column!important;
-        align-items: flex-start;
-        height: 20% !important;
+ .scrolled-nav {
+        
+        justify-content: left;
+        height: 10% !important;
         line-height: 93px !important;
-       
-  
-}
+        flex-direction: row;
+        padding-left: 2%;
+  }
+
   
 .scrolled-nav .logo{
       width: 60px;
