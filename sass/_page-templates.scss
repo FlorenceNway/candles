@@ -103,10 +103,11 @@ img{
     top: 0;
 }
 
+
 .nav-height .logo {
 height: 70px;
-weight: 60px;
-    height:45px;
+width: 60px;
+
 }
 .nav-full-height {
     height: 100vh;
@@ -151,7 +152,7 @@ weight: 60px;
     display: block;
 }
 
-div.container.box{
+div.box{
     display: flex;
     align-items: flex-end;
     justify-content: center;
