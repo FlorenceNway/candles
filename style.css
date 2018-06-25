@@ -705,7 +705,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
 /*------------Mobile Nav----------------------*/
 .mobile-menu {
   height: 84%;
@@ -806,7 +805,10 @@ footer #mobile-navigation {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: white; }
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .mentor-text {
   padding-top: 10px; }
@@ -829,8 +831,7 @@ footer #mobile-navigation {
 
 .nav-height .logo {
   height: 70px;
-  weight: 60px;
-  height: 45px; }
+  width: 60px; }
 
 .nav-full-height {
   height: 100vh; }
@@ -926,7 +927,6 @@ footer #mobile-navigation {
   .register_text {
     padding: 50px 0 100px 0; } }
 
-
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 425px) {
   .container {
@@ -941,7 +941,6 @@ footer #mobile-navigation {
     display: block; }
   ul li {
     list-style: none; }
-
   #moblie-frontpage {
     display: block; }
   .simplified_text {
@@ -959,7 +958,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
   text-align: center; }
-
 
 /*--------------------------------------------------------------
 # Blog Content
