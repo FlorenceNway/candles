@@ -2,6 +2,8 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
+
 /*------------Mobile Nav----------------------*/
 .mobile-menu{
     height: 84%;
@@ -33,9 +35,9 @@ div.menu-menu-1-container {
 }
 }
 #mobile-navigation button{
-	width: 100%;
-	background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
-	color: white;
+    width: 100%;
+    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+    color: white;
 }
 .overlay {
     height: 100%;
@@ -98,15 +100,15 @@ img{
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 10%;
+    height: 16%;
     top: 0;
-    margin-top: 25px;
 }
+
 
 .nav-height .logo {
 height: 70px;
-weight: 60px;
-    height:45px;
+width: 60px;
+
 }
 .nav-full-height {
     height: 100vh;
@@ -128,8 +130,8 @@ weight: 60px;
 .scrolled-nav {
         flex-direction: column!important;
         align-items: flex-start;
-        height: 90px !important;
-        line-height: 60px !important;
+        height: 20% !important;
+        line-height: 93px !important;
        
   
 }
@@ -139,27 +141,29 @@ weight: 60px;
 }
 
 .scrolled-nav {
-			div.menu-menu-1-container{
-						display: block;
-		  	}
+            div.menu-menu-1-container{
+                        display: block;
+            }
 .mentor-content{
     display: none;
 }
 }
 
 .menu-toggle:click{
-	display: block;
+    display: block;
 }
+
 
 .box{
 	display: flex;
+
     align-items: flex-end;
     justify-content: center;
 }
 
 #primary-menu a{
-	 margin-left: 25px;
-	 color: white;
+     margin-left: 25px;
+     color: white;
 }
 #mobile-navigation a{
     margin: 0;
@@ -205,6 +209,7 @@ weight: 60px;
                     }
         }
 
+
         #moblie-frontpage {display: none;}
 
         .simplified_text{ display: none;}
@@ -232,7 +237,6 @@ weight: 60px;
       .scrolled-nav {
         display: none; 
       }  
-
 
 
   #moblie-block { display: block;}

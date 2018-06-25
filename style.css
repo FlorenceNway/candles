@@ -705,6 +705,7 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+
 /*------------Mobile Nav----------------------*/
 .mobile-menu {
   height: 84%;
@@ -823,9 +824,8 @@ footer #mobile-navigation {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10%;
-  top: 0;
-  margin-top: 25px; }
+  height: 16%;
+  top: 0; }
 
 .nav-height .logo {
   height: 70px;
@@ -857,8 +857,8 @@ footer #mobile-navigation {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 90px !important;
-  line-height: 60px !important; }
+  height: 20% !important;
+  line-height: 93px !important; }
 
 .scrolled-nav .logo {
   width: 60px; }
@@ -926,6 +926,7 @@ footer #mobile-navigation {
   .register_text {
     padding: 50px 0 100px 0; } }
 
+
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 425px) {
   .container {
@@ -940,6 +941,7 @@ footer #mobile-navigation {
     display: block; }
   ul li {
     list-style: none; }
+
   #moblie-frontpage {
     display: block; }
   .simplified_text {
@@ -957,6 +959,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   text-align: center; }
+
 
 /*--------------------------------------------------------------
 # Blog Content
