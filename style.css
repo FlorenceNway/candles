@@ -986,6 +986,9 @@ footer {
   border-top: 1px solid #000;
   padding-top: 10px; }
 
+.content-container {
+  padding-top: 100px; }
+
 /*-----------Site Content--------------------*/
 body {
   font-family: "IBM Plex Sans", sans-serif !important; }
@@ -997,7 +1000,20 @@ body {
 .link {
   text-decoration: underline;
   -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed; }
+          text-decoration-style: dashed;
+  line-height: 1.5; }
+
+/*for menu-link when it is active, to have dashed underline*/
+.current-menu-item {
+  -webkit-text-decoration-line: underline !important;
+          text-decoration-line: underline !important;
+  -webkit-text-decoration-style: dashed !important;
+          text-decoration-style: dashed !important; }
+
+a:hover {
+  -webkit-text-decoration-line: none !important;
+          text-decoration-line: none !important;
+  font-weight: bold !important; }
 
 /*-----------Main Content--------------------*/
 .d-container {
@@ -1022,4 +1038,4 @@ ol.front_page_intro {
     font-size: 1.2em; }
 
 .front_latest_post_link {
-  font-size: 1.5rem; }
+  font-size: 1.1rem; }

@@ -78,6 +78,18 @@ body{
 .link{
 	text-decoration: underline;
     text-decoration-style: dashed;
+    line-height: 1.5;
+}
+
+/*for menu-link when it is active, to have dashed underline*/
+.current-menu-item{
+	text-decoration-line: underline!important;
+	text-decoration-style: dashed !important;
+}
+
+a:hover{
+	text-decoration-line:none!important;
+	font-weight: bold !important;
 }
 
 /*-----------Main Content--------------------*/
@@ -111,5 +123,5 @@ ol.front_page_intro{
 }
 
 .front_latest_post_link{
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 }

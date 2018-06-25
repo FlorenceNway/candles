@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<h4 class="register_text"><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a><i class="fas fa-arrow-right"></i></h4>
 
-			<p class="front_latest_post_link">We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </p></a>
+			<p class="front_latest_post_link">We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </a></p>
 
 <!------------------Only to show in Mobile view ----------- -->
 		<div class="blog-wrapper" id="moblie-frontpage">
