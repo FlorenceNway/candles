@@ -1039,3 +1039,8 @@ ol.front_page_intro {
 
 .front_latest_post_link {
   font-size: 1.1rem; }
+
+.page-id-97.box {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
