@@ -12,3 +12,7 @@ get_header(); ?>
 
 		<div class="resources">
 		<div class="resources-info">	
+
+			<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => 5, 'order' => 'ASC',); 
+	$posts = new WP_Query( $args ); ?>
+
