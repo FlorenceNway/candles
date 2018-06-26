@@ -858,7 +858,7 @@ footer #mobile-navigation {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 20% !important;
+  height: 10% !important;
   line-height: 93px !important; }
 
 .scrolled-nav .logo {
@@ -1045,3 +1045,12 @@ ol.front_page_intro {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+
+.tab {
+  display: none; }
+
+input.invalid {
+  background-color: #ffdddd; }
+
+#subBtn {
+  display: none; }
