@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Template Name: About Template
@@ -13,11 +14,13 @@ get_header(); ?>
 		
 	   <?php while ( have_posts() ) : the_post(); ?>
 			<div class="about">
+
 				<h1><?php echo the_title(); ?></h1>
 										
 				<div>
 					<?php echo the_content(); ?> 
 				</div>
+
 				<hr class="blue-line">
 				<h2><?php echo CFS()->get( 'meet_team_title' ); ?></h2>
 				<div class="tom">
@@ -54,6 +57,7 @@ get_header(); ?>
 					 		<?php echo CFS()->get( 'tabrez_content' ); ?>
 					</div>
 					
+		
 				</div>
 
 			</div>
@@ -70,4 +74,7 @@ get_header(); ?>
 
 
 
+
 <?php get_footer(); ?>
+
+
