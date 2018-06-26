@@ -90,6 +90,7 @@ img{
     flex-direction: column;
     text-align: center;
     color: white;
+    justify-content: center;
 }
 .mentor-text{
     padding-top: 10px;
@@ -130,7 +131,7 @@ width: 60px;
 .scrolled-nav {
         flex-direction: column!important;
         align-items: flex-start;
-        height: 20% !important;
+        height: 10% !important;
         line-height: 93px !important;
        
   

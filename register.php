@@ -13,7 +13,7 @@ get_header(); ?>
 		<div class="register">
 			<h3>Register for free</h3>
 			<p>Some body copy about registering for a service that has thousands of people already engaging in Slack.</p>
-			<h4><a href="<?php echo get_template_directory_uri(); ?>/step-1/" class="link"> Register for free </a><i class="fas fa-arrow-right"></i></h4>
+			<h4><a href="<?php echo get_template_directory_uri(); ?>/test-register/" class="link"> Register for free </a><i class="fas fa-arrow-right"></i></h4>
 		</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
