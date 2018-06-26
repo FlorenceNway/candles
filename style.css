@@ -781,6 +781,7 @@ footer #mobile-navigation {
   background: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
   background: linear-gradient(to right, #01c4d3, #f4c7ee);
   position: fixed;
+  height: 10%;
   top: 0;
   left: 0;
   -webkit-transition: height .5s;
@@ -793,8 +794,6 @@ footer #mobile-navigation {
           align-items: center;
   -webkit-transition: height .5s, line-height .5s;
   transition: height .5s, line-height .5s;
-  top: 0;
-  margin-top: 25px;
   color: white; }
   .nav-full-height div.menu-menu-1-container {
     display: none; }
@@ -825,9 +824,8 @@ footer #mobile-navigation {
       -ms-flex-align: center;
           align-items: center;
   top: 0;
-  height: 10%;
-  padding-left: 3%;
-  margin-top: 25px; }
+  height: 18%;
+  padding-left: 3%; }
 
 .nav-height .logo {
   height: 70px;
@@ -858,7 +856,7 @@ footer #mobile-navigation {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  height: 10% !important;
+  height: 18% !important;
   line-height: 93px !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -930,7 +928,33 @@ footer #mobile-navigation {
   .simplified_text {
     display: none; }
   .register_text {
-    padding: 50px 0 100px 0; } }
+    padding: 50px 0 100px 0; }
+  /*About page*/
+  #about-page {
+    padding-top: 14%;
+    width: 65%; }
+  .tabrez {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .tom {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  /*about page - switch grid areas*/
+  .tom div:nth-of-type(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .tom div:nth-of-type(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  /*about page - hide names for desktop*/
+  .tom-name {
+    display: none; }
+  .tabrez-name {
+    display: none; }
+  .blue-line {
+    display: none; } }
 
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 425px) {
@@ -950,12 +974,50 @@ footer #mobile-navigation {
     display: block; }
   .simplified_text {
     display: block; }
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%; } }
+  /*mobile about page*/
+  .about {
+    padding-bottom: 40%; }
+  div.tom-grid {
+    display: grid;
+    grid-template-columns: 40% 60%; }
+  .tom-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  div.tab-grid {
+    display: grid;
+    grid-template-columns: 43% 60%; }
+  .tabrez-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .blue-line {
+    width: 100%;
+    height: 3px;
+    margin: 0;
+    padding: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
+    background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
+    margin-bottom: 12%;
+    margin-top: 12%; } }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 22px;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
   background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
   color: white;
