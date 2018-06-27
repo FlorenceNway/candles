@@ -216,11 +216,16 @@ width: 60px;
 
         #moblie-frontpage {display: none;}
 
-        .simplified_text{ display: none;}
+        .simplified_text { display: none;}
+
+        .desktop-register-link {display:block;}
+        .mobile-register-link {display:none;}
 
         .register_text{
                 padding: 50px 0 100px 0;
         }
+         
+
     /*About page*/
     #about-page{
         padding-top: 14%;
@@ -283,6 +288,8 @@ width: 60px;
   #moblie-frontpage {display: block;}
 
   .simplified_text {display: block;}
+  .desktop-register-link{display:none;}
+    .mobile-register-link {display:block;}
 
 
   /*mobile about page*/
