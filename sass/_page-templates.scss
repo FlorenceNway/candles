@@ -200,7 +200,9 @@ width: 60px;
                 }
         }
             
-
+        .black-logo{
+            display: none;
+        }
         #mobile-block {display: none;}
 
         nav.nav-height {
@@ -254,6 +256,30 @@ width: 60px;
   .blue-line{
     display: none;
   }
+/*resources page*/
+#primary.resources-area{
+    padding-top: 10%;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+.resource-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    article{
+        width: 330px;
+    }
+}
+.resource-hr{
+    width: 100%;
+}
+.resource-info{
+    font-size: 40px;
+    font-weight: 600;
+    width:50%;
+}
 }
 /*------Mobile Media Screen------------*/
 
@@ -320,6 +346,13 @@ div.tab-grid{
     margin-bottom: 12%;
     margin-top: 12%;
 }
+/*mobile resource page*/
+.resource-info{
+    font-size: 20px;
+    font-weight: 600;
+    width:80%;
+}
+
 }
   footer{
     position: fixed;

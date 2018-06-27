@@ -341,6 +341,11 @@ img {
   max-width: 100%;
   /* Adhere to container width. */ }
 
+.black-logo {
+  height: 70px;
+  padding-left: 5%;
+  margin-bottom: 5%; }
+
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
@@ -856,7 +861,6 @@ footer #mobile-navigation {
     opacity: 1; } }
 
 .scrolled-nav {
-
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -867,8 +871,6 @@ footer #mobile-navigation {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-left: 2%; }
-
- 
 
 .scrolled-nav .logo {
   width: 60px; }
@@ -918,6 +920,8 @@ footer #mobile-navigation {
     display: flex; }
   .scrolled-nav .mentor-text {
     display: none; }
+  .black-logo {
+    display: none; }
   #mobile-block {
     display: none; }
   nav.nav-height .menu-menu-1-container {
@@ -960,8 +964,30 @@ footer #mobile-navigation {
   .tabrez-name {
     display: none; }
   .blue-line {
-    display: none; } }
-
+    display: none; }
+  /*resources page*/
+  #primary.resources-area {
+    padding-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 100%; }
+  .resource-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px; }
+    .resource-links article {
+      width: 330px; }
+  .resource-hr {
+    width: 100%; }
+  .resource-info {
+    font-size: 40px;
+    font-weight: 600;
+    width: 50%; } }
 
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 425px) {
@@ -1018,7 +1044,12 @@ footer #mobile-navigation {
     background-image: -webkit-gradient(linear, left top, right top, from(#01c4d3), to(#f4c7ee));
     background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
     margin-bottom: 12%;
-    margin-top: 12%; } }
+    margin-top: 12%; }
+  /*mobile resource page*/
+  .resource-info {
+    font-size: 20px;
+    font-weight: 600;
+    width: 80%; } }
 
 footer {
   position: fixed;

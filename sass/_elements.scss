@@ -65,7 +65,11 @@ img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 }
-
+.black-logo{
+	height: 70px;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
