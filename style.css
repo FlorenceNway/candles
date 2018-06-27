@@ -937,6 +937,10 @@ footer #mobile-navigation {
     display: none; }
   .simplified_text {
     display: none; }
+  .desktop-register-link {
+    display: block; }
+  .mobile-register-link {
+    display: none; }
   .register_text {
     padding: 50px 0 100px 0; }
   /*About page*/
@@ -964,6 +968,7 @@ footer #mobile-navigation {
   .tabrez-name {
     display: none; }
   .blue-line {
+
     display: none; }
   /*resources page*/
   #primary.resources-area {
@@ -989,6 +994,7 @@ footer #mobile-navigation {
     font-weight: 600;
     width: 50%; } }
 
+
 /*------Mobile Media Screen------------*/
 @media screen and (max-width: 425px) {
   .container {
@@ -1006,6 +1012,10 @@ footer #mobile-navigation {
   #moblie-frontpage {
     display: block; }
   .simplified_text {
+    display: block; }
+  .desktop-register-link {
+    display: none; }
+  .mobile-register-link {
     display: block; }
   /*mobile about page*/
   .about {
@@ -1156,6 +1166,3 @@ ol.front_page_intro {
 
 input.invalid {
   background-color: #ffdddd; }
-
-#subBtn {
-  display: none; }

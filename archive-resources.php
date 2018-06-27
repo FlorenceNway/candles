@@ -1,11 +1,13 @@
 <?php
 /**
  * Template Name: Resources Template
+
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
+
 
 
 <div id="resources" class="content-area">
@@ -17,6 +19,8 @@ get_header(); ?>
 	Seriously, they’re good.
 	</p>
 </div>
+
+
 
 		<div class="resources">
 		<div class="resources-info">	
@@ -32,3 +36,4 @@ get_header(); ?>
         </section>
 </div>
 </div>
+
