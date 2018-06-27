@@ -7,7 +7,11 @@
 
 ?>
 
-			</div><!-- #content -->
+			
+			<div class="copywright">
+				© Candles Mentoring Ltd 2018. All rights reserved.
+			</div>
+			<!-- #content -->
 			<section id="mobile-block">
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">

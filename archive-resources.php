@@ -1,40 +1,39 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Resources Template
+
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+
+
+<div id="resources" class="content-area">
 		<main id="main" class="site-main" role="main">
+<div class="resource-info">
+	<p>
+	A curated page dedicated to all the really good links out there. 
+	<br>
+	Seriously, they’re good.
+	</p>
+</div>
+
+
 
 		<div class="resources">
 		<div class="resources-info">	
 
-	<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => 5, 'order' => 'ASC',); 
+			<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => 5, 'order' => 'ASC',); 
 	$posts = new WP_Query( $args ); ?>
 
-	<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					echo get_the_content();
-				?>
-
-			<?php endwhile; ?>
-
-				
-
-	<?php endif; ?>
-
+            <?php endforeach; ?>
+            </ul>
+          <?php endif; ?>      
+            </div><!-- shop-categories-wrapper -->
+        </section>
 </div>
 </div>
 

@@ -6,13 +6,20 @@
 
       scrollTop = $(window).scrollTop();
 
-      if (scrollTop >= 10) {
-        $('.nav-full-height').addClass('scrolled-nav');
-      } else if (scrollTop <= 10) {
-        $('.nav-full-height').removeClass('scrolled-nav');
-      }
 
-    });
+     scrollTop = $(window).scrollTop();
+    
+    if (scrollTop >= 40) {
+      $('.nav-full-height').addClass('scrolled-nav');
+    } else if (scrollTop <= 10) {
+      $('.nav-full-height').removeClass('scrolled-nav');
+    } 
+    
+   }); 
+  
+ }); 
+
+  
 
   });
 

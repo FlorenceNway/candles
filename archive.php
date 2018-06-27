@@ -7,18 +7,22 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+	<div id="primary" class="resources-area">
+		<main id="resources" class="site-main" role="main">
+<div class="resource-info">
+	<p>
+	A curated page dedicated to all the really good links out there. 
+	<br>
+	<br>
+	Seriously, they’re good.
+	</p>
+</div>
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+			<header>
+				
 			</header><!-- .page-header -->
-
+	<div class="resource-links">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -36,7 +40,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
+		
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
