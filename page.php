@@ -21,17 +21,18 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
+
 <script>
 var lookingFor = document.getElementById('lookingFor').value;
 console.log('lookingFor:', lookingFor);
-jQuery(".mentor").hide();
-jQuery(".mentored").hide();
-jQuery(".both").hide();
-if(lookingFor == "a mentor") {
-  jQuery(".mentor").show();
-} else if (lookingFor == "mentored") {
-  jQuery(".mentored").show();
-} else {
-  jQuery(".both").show();
-}
+	jQuery(".mentor").hide();
+	jQuery(".mentored").hide();
+	jQuery(".both").hide();
+	if(lookingFor == "a mentor") {
+	  jQuery(".mentor").show();
+	} else if (lookingFor == "mentored") {
+	  jQuery(".mentored").show();
+	} else {
+	  jQuery(".both").show();
+	}
 </script>

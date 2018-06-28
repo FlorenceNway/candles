@@ -34,7 +34,11 @@ if ($('scrolled-nav.logo').height() == 60) {
  });
 
 
-  
+  //displaying username in step2 (where are you based)
+  $("#lastname").focus(function(){
+      var firstname = jQuery('#firstname').val();
+      document.getElementById("username").innerHTML = firstname;
+   });
 
 
   //Redirect after submit
@@ -92,9 +96,7 @@ if ($('scrolled-nav.logo').height() == 60) {
   document.querySelector("#nextBtn").addEventListener("click", function(event) {
     next();
   });
-
-   
-
+  
 
 })(jQuery);
 

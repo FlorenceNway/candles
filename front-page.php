@@ -35,9 +35,9 @@ get_header(); ?>
 				  
 				  <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-				  	<div class="single-blog-wrapper blog_in_front_page">
+				  	<div class="single-blog-wrapper">
 
-				  		<div class="left-text-wrapper">
+				  		<div class="text-wrapper">
 					  		<div class="blog-category">
 				        			<?php 
 				        				foreach((get_the_category()) as $category){
