@@ -9,7 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-			<div class="single-blog-wrapper">
+			<div>
 
 				  		<div class="blog-category">
 			        			<?php 
