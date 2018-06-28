@@ -10,17 +10,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main content-container" role="main">
 		
-		<h1>Blog</h1>
+		<h1 class="header-blog">Blog</h1>
 		
-		<div class="blog-wrapper">
+		<div class="blog-wrapper" id="mobile-blog-page">
 			<?php $args = array( 'post_type' => 'post','order' =>'ASC')?>
 
 			   <?php $posts = new WP_Query( $args );  ?>
 
 				<?php if ( $posts->have_posts() ) : ?>
 				  <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
-
-				  	<div class="single-blog-wrapper">
+					<div class="single-blog-wrapper">
+				  	<div class="text-wrapper">
 
 				  		<div class="blog-category">
 			        			<?php 
@@ -58,7 +58,8 @@ get_header(); ?>
 					<div class="feature_img">
 						<a href="<?php echo get_permalink(); ?>" rel="bookmark">
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>" /></a>
-					</div><br><br>
+					</div>
+				</div>	
 					   	<!-- <a href="<?php //echo get_permalink();?>" class="post-btn">READ MORE</a> -->
 				  <?php endwhile; ?>
 				<?php endif; ?>

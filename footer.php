@@ -8,9 +8,7 @@
 ?>
 
 			
-			<div class="copywright">
-				© Candles Mentoring Ltd 2018. All rights reserved.
-			</div>
+			
 			<!-- #content -->
 			<section id="mobile-block">
 			<footer id="colophon" class="site-footer" role="contentinfo">
@@ -34,9 +32,13 @@
 				
 				</nav><!-- #site-navigation -->
 				 <!-- Added a open button 20/06/18-->
-		<span id="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>	
+				 
+				<span id="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>	
+				
 			</footer><!-- #colophon -->
+
 			</section>
+			
 		</div><!-- #page -->
 
 		<!-- added the open and close function for mobile nav -->
