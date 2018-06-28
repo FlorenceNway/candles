@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Resources Template
+ * 
 
  *
  * @package RED_Starter_Theme

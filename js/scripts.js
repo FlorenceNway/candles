@@ -1,3 +1,4 @@
+// scroll down nav and add class
 (function($) {
   $(document).ready(function() {
 
@@ -9,19 +10,32 @@
 
      scrollTop = $(window).scrollTop();
     
-    if (scrollTop >= 40) {
+    if (scrollTop >= 20) {
       $('.nav-full-height').addClass('scrolled-nav');
-    } else if (scrollTop <= 10) {
+    } else if (scrollTop <= 20) {
       $('.nav-full-height').removeClass('scrolled-nav');
     } 
-    
+
+   /* if (scrollTop <= 33) {
+      $(".menu-menu-1-container").hide();
+
+    } else if (scrollTop >=33) {
+      
+      $(".menu-menu-1-container").show();
+    }*/
+if ($('scrolled-nav.logo').height() == 60) {
+        $('.menu-menu-1-container').show();
+    }
+        else if ($('.scrolled-nav.logo').height() == 40){
+          $('.scrolled-nav div.menu-menu-1-container').hide();        
+        }
    }); 
   
- }); 
+ });
+
 
   
 
-  });
 
   //Redirect after submit
   document.addEventListener('wpcf7mailsent', function(event) {
