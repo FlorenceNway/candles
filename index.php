@@ -64,8 +64,8 @@ get_header(); ?>
 				  <?php endwhile; ?>
 				<?php endif; ?>
 		</div>				  
-
+<?php get_footer(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying resources posts.
  *
  * @package RED_Starter_Theme
  */
@@ -26,9 +26,27 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+		<hr class="resource-hr">
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+		<?php if ( 'post' === get_post_type() ) : ?>
+		
+	
+		<a href="<?php echo CFS()->get( 'resources_link' ); ?>">helpp me</a>
+		
+		<?php endif; ?>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<?php the_excerpt(); ?>
+	</div><!-- .entry-content -->
+	
+</article><!-- #post-## -->
 
 			<?php endwhile; ?>
 
@@ -39,8 +57,8 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+<?php get_footer(); ?>
 		
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+

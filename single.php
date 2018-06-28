@@ -18,8 +18,8 @@ get_header(); ?>
 
 			
 		<?php endwhile; // End of the loop. ?>
-
+<?php get_footer(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+

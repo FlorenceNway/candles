@@ -70,8 +70,8 @@ get_header(); ?>
 		</div>
 <!-------------------End Only to show in Mobile view----- -->
 
+<?php get_footer(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 		
-<?php get_footer(); ?>
 

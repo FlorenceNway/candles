@@ -32,7 +32,7 @@
 				<a href="<?php echo get_option("siteurl"); ?>" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/black_logo.svg" alt="Candles logo" class="black-logo">
 				</a>
-
+				<section class="fixed-nav">
 				<nav id="desktop-navigation" class="main-navigation <?php echo $fullHeight  ? ' nav-full-height ' : ' nav-height'; ?>" role="navigation">
 				
 					 
@@ -43,10 +43,10 @@
 
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						
+					
 			
 				</nav><!-- #site-navigation -->
-			
+			</section>	
 		</header><!-- #masthead -->
 		
 		<div id="content" class="site-content site-container box">
