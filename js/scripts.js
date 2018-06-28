@@ -25,6 +25,7 @@
       document.getElementById("username").innerHTML = firstname;
    });
 
+
   //Redirect after submit
   document.addEventListener('wpcf7mailsent', function(event) {
     location = 'http://localhost/candles_community_project/success-message/';
@@ -81,14 +82,6 @@
     next();
   });
   
-
-   
-
-  
-  // var firstname = document.getElementById('firstname').val();
-  // console.log(firstname);
-  //document.getElementById("username").innerHTML = firstname;
-
 
 })(jQuery);
 
