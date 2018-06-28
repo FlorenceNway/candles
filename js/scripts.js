@@ -10,9 +10,9 @@
 
      scrollTop = $(window).scrollTop();
     
-    if (scrollTop >= 20) {
+    if (scrollTop >= 10) {
       $('.nav-full-height').addClass('scrolled-nav');
-    } else if (scrollTop <= 20) {
+    } else if (scrollTop <= 10) {
       $('.nav-full-height').removeClass('scrolled-nav');
     } 
 

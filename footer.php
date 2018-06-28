@@ -11,7 +11,7 @@
 			<div class="copyright">
 				© Candles Mentoring Ltd 2018. All rights reserved.
 			</div>
-
+		
 			<!-- #content -->
 			<section id="mobile-block">
 				

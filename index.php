@@ -60,7 +60,7 @@ get_header(); ?>
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>" /></a>
 					</div>
 				</div>	
-					   	<!-- <a href="<?php //echo get_permalink();?>" class="post-btn">READ MORE</a> -->
+					   	
 				  <?php endwhile; ?>
 				<?php endif; ?>
 		</div>				  
