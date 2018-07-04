@@ -5,3 +5,122 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700');
 
 $ibm : 'IBM Plex Sans', sans-serif;
+
+:root {
+  --turquoise-blue: #01c4d3;
+  --lavender: #f4c7ee;
+  --grey: #777777;
+  --white: #ffffff;
+  --black: #000000;
+  --white-two: #ececec;
+}
+/* Text styles */
+.Type-style54-Mega {
+  font-family: IBMPlexSans;
+  font-size: 54px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  color: #152935;
+}
+.Mi_fi-3240 {
+  font-family: IBMPlexSans;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #000000;
+  color: var(--black);
+}
+.-Plex-Semi {
+  font-family: IBMPlexSans;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #000000;
+  color: var(--black);
+}
+.H4HK-GrotesqueLeftBlack {
+  font-family: HKGrotesk;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  color: #2e3136;
+}
+.-Plex-Semi {
+  font-family: IBMPlexSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #000000;
+  color: var(--black);
+}
+.-Plex-Text-body {
+  font-family: IBMPlexSans-Text;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  color: var(--black);
+}
+.-Plex-Text-body---hyperlink {
+  font-family: IBMPlexSans-Text;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  color: var(--black);
+}
+.-Plex-Med {
+  font-family: IBMPlexSans;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: right;
+  color: #018fd3;
+}
+.Sketch-Measure-Spacing {
+  font-family: HelveticaNeue;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  color: var(--white);
+}
+.-Plex-Text {
+  font-family: IBMPlexSans;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #000000;
+  color: var(--black);
+}

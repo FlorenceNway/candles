@@ -19,4 +19,3 @@
 
 
 
-<?php get_footer(); ?>

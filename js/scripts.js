@@ -16,29 +16,32 @@
       $('.nav-full-height').removeClass('scrolled-nav');
     } 
 
-   /* if (scrollTop <= 33) {
+    if (scrollTop <= 30){
+       $('.scrolled-nav').css({                      // scroll to that element or below it
+            position: 'fixed !important',
+        });
+    }
+    if (scrollTop <= 25) {
       $(".menu-menu-1-container").hide();
 
-    } else if (scrollTop >=33) {
+    } else if (scrollTop >=25.5) {
       
       $(".menu-menu-1-container").show();
-    }*/
-if ($('scrolled-nav.logo').height() == 60) {
+    }
+
+/*if ($('scrolled-nav.logo').height() == 60) {
         $('.menu-menu-1-container').show();
     }
         else if ($('.scrolled-nav.logo').height() == 40){
           $('.scrolled-nav div.menu-menu-1-container').hide();        
-        }
+        }*/
    }); 
+    
   
  });
 
 
-  //displaying username in step2 (where are you based)
-  $("#lastname").focus(function(){
-      var firstname = jQuery('#firstname').val();
-      document.getElementById("username").innerHTML = firstname;
-   });
+  
 
 
   //Redirect after submit
@@ -96,7 +99,9 @@ if ($('scrolled-nav.logo').height() == 60) {
   document.querySelector("#nextBtn").addEventListener("click", function(event) {
     next();
   });
-  
+
+   
+
 
 })(jQuery);
 
