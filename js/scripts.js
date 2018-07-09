@@ -6,9 +6,6 @@
     $(window).scroll(function() {
 
       scrollTop = $(window).scrollTop();
-
-
-     scrollTop = $(window).scrollTop();
     
     if (scrollTop >= 10) {
       $('.nav-full-height').addClass('scrolled-nav');
@@ -16,13 +13,6 @@
       $('.nav-full-height').removeClass('scrolled-nav');
     } 
 
-   /* if (scrollTop <= 33) {
-      $(".menu-menu-1-container").hide();
-
-    } else if (scrollTop >=33) {
-      
-      $(".menu-menu-1-container").show();
-    }*/
 if ($('scrolled-nav.logo').height() == 60) {
         $('.menu-menu-1-container').show();
     }

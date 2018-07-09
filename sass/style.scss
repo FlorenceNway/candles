@@ -76,10 +76,6 @@ body{
 	margin: 0 auto;
 }
 
-.link{
-	border-bottom: 2px dashed #000;
-	line-height: 1.5;
-}
 
 /*for menu-link when it is active, to have dashed underline*/
 .current-menu-item{
@@ -87,10 +83,15 @@ body{
 	text-decoration-style: dashed !important;
 }
 
-a:hover{
+#primary-menu a{
 	text-decoration-line:none!important;
-	font-weight: bold !important;
+	color: #fff;
 }
+#primary-menu a:hover {
+    margin-left: 25px;
+    font-weight: bold;
+}
+
 
 /*-----------Main Content--------------------*/
 .d-container{
@@ -102,9 +103,20 @@ h3{
 	line-height: 1.2;
 }
 
-.link:active,.link:visited{
+.link{
+	border-bottom: 2px dashed #000;
+	line-height: 1.5;
+}
+
+.link:active,.link:visited{ 
 	color: #000;
-	font-weight: bold;
+	
+}
+
+.link:hover{
+	text-decoration-line: none;
+	border-bottom: 2px dashed #01C4D3;
+	color:#01C4D3;
 }
 
 .fa-arrow-right{
@@ -112,14 +124,7 @@ h3{
 }
 
 /*-----------Front page----------------*/
-ol.front_page_intro{
-	padding-left: 20px;
-	margin-left: 0;
 
-	li{
-		font-size: 1.2em;
-	}
-}
 
 .front_latest_post_link{
 	font-size: 1.1rem;
