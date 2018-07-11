@@ -141,15 +141,14 @@ width: 60px;
         height: 19% !important;
         line-height: 93px !important;
         flex-direction: row;
-        padding-left: 2%;
-        transition: 4s;
-        padding-left: 2%;
         transition: 4s;
         padding-top: 3%;
+
   }
 .scrolled-nav .logo{
       width: 60px;
       transition: 3s;
+      margin-left: 0;
 }
 
 
@@ -162,11 +161,16 @@ width: 60px;
         height: 552px;
 }
 
+.front-page-wrapper{
+    width: 100%;
+    margin-left: 4%;
+}
 
 ol.front_page_intro { 
     counter-reset: item;
     list-style-type: none;
     padding-left: 0;
+    margin-left: 0;
 
     li:before { 
         content: counter(item) "   "; 
@@ -183,38 +187,30 @@ ol.front_page_intro {
         padding-top: 3%;
     }
 .scrolled-nav .logo{
-      width: 60px;
-      transform: translate(-550px,-20px);
+        width: 60px;
+        transform: translate(-550px,-20px);
         transition: 3s;
+        margin-left: 0;
     }
 }
-@media screen and (max-width: 1024px) {
-    .scrolled-nav {
-        height: 13% !important; 
-        padding-top: 3%;
-    }
-    .scrolled-nav .logo{
-      width: 60px;
-      transform: translate(-380px,-20px);
-        transition: 3s;
-}
-}
+
 @media screen and (max-width: 768px) {  
 .scrolled-nav {
         height: 15% !important; 
         padding-top: 4%;
     }  
 .scrolled-nav .home_logo{
-      width: 60px;
-      transform: translate(-290px,-20px);
-        transition: 3s;
+        width: 60px;
+        /*transform: translate(-290px,-20px);
+        transition: 3s;*/
+        margin-left: 0;
 }
 }
 .scrolled-nav {
         div.menu-menu-1-container{
-        display: block;
-        position: fixed;
-        margin-left: 16%;
+            display: block;
+            position: fixed;
+            margin-left: 5%;
 }
             }
 .mentor-content{
@@ -249,6 +245,16 @@ ol.front_page_intro {
 
 /*------Desktop Media Screen------------*/
 @media screen and (min-width: 426px) {
+    .scrolled-nav {
+        height: 13% !important; 
+        padding-top: 3%;
+    }
+
+    .scrolled-nav .logo{
+        width: 60px;
+        transform: translate(-620px,-5px);
+        transition: 3s;
+    }
 
         .container{
             padding-top: 100px;
@@ -283,6 +289,7 @@ ol.front_page_intro {
                     .menu-menu-1-container{
                                 display: flex !important;
                                 align-items: center;
+                                margin-left: 5%;
                     }
                     p{
                         display: none;
@@ -299,8 +306,10 @@ ol.front_page_intro {
         .mobile-register-link {display:none;}
 
         .register_text{
-                padding: 50px 0 100px 0;
+                padding: 50px 0 80px 0;
+                font-size: 32px;
         }
+
         .header-blog{ display: none;} 
     
 
@@ -320,14 +329,15 @@ ol.front_page_intro {
     }
 
 /*about page - switch grid areas*/
-    .tom div:nth-of-type(1) {
+.tom div:nth-of-type(1) {
     order: 2;
   }
   
   .tom div:nth-of-type(2) {
     order: 1;
   }
-  /*about page - hide names for desktop*/
+
+/*about page - hide names for desktop*/
   .tom-name{
     display: none;
   }
@@ -364,33 +374,48 @@ ol.front_page_intro {
 /*-----Blog page----*/
 
     .first-single-image {
-        border: 1px solid #000;
-        height: 600px;
+        height: 400px;
+        width: 810px;
     }
+
     img.size-medium {
-    width: 100%;
-    height: 600px;
+        width: 100%;
+        height: 600px;
     }
 
 /*---Archive blog page(index.php)---*/
+    .blog-wrapper{
+            margin-top: 100px;
+    }
+
     .single-blog-wrapper {
-            width: 70%;
-            height: 550px;
-            margin: 20px auto 80px auto;
-            border: 1px solid #000;
+            width: 65%;
+            height: 600px;
+            margin: 0px auto 96px auto;
             text-align: center;
+            border:none;
             display: flex;
             flex-direction: column-reverse;
 
         .text-wrapper {
-            flex: 1 30%;
-            padding: 20px;
+            flex: 1 50%;
+            padding: 5px 120px;
             overflow: hidden;
+            font-size: 16px;
+            border:1px solid #000;
+            border-top: none;
+            
+            h3.blog-name {
+                font-size: 18px;
+            }
+            .author{
+                color: #777777;
+                font-size: 12px;
+            }
         }
 
         .feature_img {
-            height: 70%;
-            border: 1px solid #000;
+            height: 400px;
             flex: 0 70%;
             img{
                 width: 100%;
@@ -400,9 +425,10 @@ ol.front_page_intro {
     }
 
 }
+
 /*resource single*/
 .resource-template-default{
-padding-top: 10%;
+        padding-top: 10%;
 }
 
 
@@ -502,6 +528,7 @@ padding-top: 10%;
     .short-description{
         display: none;
     }
+
     .single-blog-wrapper {
             width: 100%;
             height: 200px;
@@ -512,10 +539,11 @@ padding-top: 10%;
      
         .text-wrapper {
             flex: 1 50%;
-            padding: 15px;
+            padding: 5px 150px;
             overflow: hidden;
-            h3{
-                font-size: 1.4em;
+
+            h3.blog-name {
+                font-size: 18px;
             }
         }
 
@@ -533,7 +561,7 @@ padding-top: 10%;
 } /*-----------End of Media Queries-----------------*/
 
   footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background-image: linear-gradient(to right, #01c4d3, #f4c7ee);
@@ -544,11 +572,64 @@ padding-top: 10%;
   }
 
   .copyright{
-    padding-top: 20%;
+    position: relative;
+    bottom: 16px;
+    font-size: 10px;
+    left: 0;
+   }
 
-  }
+/*---Radio button and Checkbox customizaion ----*/
+form h2{
+    font-size: 36px;
+}
+
+span.wpcf7-list-item {
+    display: inline-block;
+    margin: 0 0 0 0; 
+}
+
+.wpcf7-form div label {
+     margin-top: 0;
+}
+
+.checkmark input[type='radio'],.checkmark input[type='checkbox']{
+    position: relative;
+    top: 16px;
+}
+
+input[type='radio'],input[type='checkbox'] {
+  -webkit-appearance:none;
+  width:20px;
+  height:20px;
+  border:2px solid #000;
+  border-radius:50%;
+  outline:none;
+}
+
+input[type='radio']:hover {
+  box-shadow:0 0 5px 0px orange inset;
+}
+
+input[type='radio']:before,input[type='checkbox']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
 
 
+input[type='radio']:checked:before,input[type='checkbox']:checked:before {
+  background:#01c4d3;
+  color:#01c4d3;
+}
 
 
+.wpcf7-form div label {
+     margin: 2px 0 !important; 
+}
 
+form.wpcf7-form {
+    margin-left: 15%;
+}

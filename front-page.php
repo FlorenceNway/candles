@@ -10,6 +10,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main d-container" role="main">
+			<div class="front-page-wrapper">
+				
 			<h3 class="simplified_text">UX Mentoring simplified...</h3>
 
 			<ol class="front_page_intro">
@@ -24,7 +26,7 @@ get_header(); ?>
 		
 
 			<p class="front_latest_post_link">We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </a></p>
-
+		</div>
 <!------------------Only to show in Mobile view ----------- -->
 		<div class="blog-wrapper" id="moblie-frontpage">
 			<?php $args = array( 'post_type' => 'post','order' =>'ASC')?>

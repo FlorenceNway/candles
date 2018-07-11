@@ -25,9 +25,11 @@ get_header(); ?>
 <script>
 var lookingFor = document.getElementById('lookingFor').value;
 console.log('lookingFor:', lookingFor);
+
 	jQuery(".mentor").hide();
 	jQuery(".mentored").hide();
 	jQuery(".both").hide();
+	
 	if(lookingFor == "a mentor") {
 	  jQuery(".mentor").show();
 	} else if (lookingFor == "mentored") {
