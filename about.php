@@ -22,7 +22,8 @@ get_header(); ?>
 				</div>
 
 				<hr class="blue-line">
-				<h2><?php echo CFS()->get( 'meet_team_title' ); ?></h2>
+
+				<h1 class="meet-team"><?php echo CFS()->get( 'meet_team_title' ); ?></h1>
 				<div class="tom">
 					<div class="tom-grid">
 						
@@ -40,8 +41,7 @@ get_header(); ?>
 			
 
 				</div>
-				<br>
-				<br>
+				
 				<br>
 				<div class="tabrez">
 					<div class="tab-grid">	

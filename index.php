@@ -13,7 +13,7 @@ get_header(); ?>
 		<h1 class="header-blog">Blog</h1>
 		
 		<div class="blog-wrapper" id="mobile-blog-page">
-			<?php $args = array( 'post_type' => 'post','order' =>'ASC')?>
+			<?php $args = array( 'post_type' => 'post','order' =>'ASC') ?>
 
 			   <?php $posts = new WP_Query( $args );  ?>
 
@@ -31,7 +31,7 @@ get_header(); ?>
 			        	</div>
 
 					    <h3 class="blog-name">
-					    	<a href="<?php echo get_permalink(); ?>" rel="bookmark">
+					    	<a class="blog-link" href="<?php echo get_permalink(); ?>" rel="bookmark">
 					    		<?php echo get_the_title(); ?> </a>
 					    </h3>
 			    
@@ -62,7 +62,9 @@ get_header(); ?>
 				</div>	
 					   	
 				  <?php endwhile; ?>
+
 				<?php endif; ?>
+			<?php the_posts_navigation(); ?>
 		</div>				  
 <?php get_footer(); ?>
 		</main><!-- #main -->

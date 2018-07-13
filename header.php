@@ -22,6 +22,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 			
 			<?php $fullHeight = is_front_page(); ?> 
+
 			<header id="masthead" class="site-header" role="banner">
 
 				<div class="site-branding">
@@ -29,10 +30,15 @@
 					<p class="site-description"></p>
 				</div><!-- .site-branding -->
 
-				<a href="<?php echo get_option("siteurl"); ?>" >
-					<img src="<?php echo get_template_directory_uri(); ?>/images/black_logo.svg" alt="Candles logo" class="black-logo">
-				</a>
+				<div class="black-logo">
+					<a href="<?php echo get_option("siteurl"); ?>" >
+					<img src="<?php echo get_template_directory_uri(); ?>/images/black_logo.svg" alt="mobile_logo" 
+					>
+					</a>
+				</div>
+
 				<section class="fixed-nav">
+
 				<nav id="desktop-navigation" class="main-navigation <?php echo $fullHeight  ? ' nav-full-height ' : ' nav-height'; ?>" role="navigation">
 					
 						<a href="<?php echo get_option("siteurl"); ?>" >
@@ -41,7 +47,7 @@
 				
 						<p class="mentor-text">UX Mentoring simplified ↓ </p>
 
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						
 						<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					
 			

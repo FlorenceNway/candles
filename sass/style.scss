@@ -1,9 +1,8 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Candles Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author: Darragh and Florence Nway
+Description: A WordPress Candles theme for Community Network for UXers.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,8 +10,6 @@ Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -60,9 +57,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "modules";
 @import "widgets";
 @import "content";
-@import "media";
 @import "page-templates";
 @import "blog";
+@import "media";
 
 /*-----------Site Content--------------------*/
 
@@ -71,25 +68,32 @@ body{
 	font-size : 16px;
 }
 
-.site-container{
-	width: 90%;
-	margin: 0 auto;
-}
 
+*::selection {
+  background: #F4C7EE; /* WebKit/Blink Browsers /for hightlight*/
+}
 
 /*for menu-link when it is active, to have dashed underline*/
 .current-menu-item{
 	text-decoration-line: underline!important;
 	text-decoration-style: dashed !important;
+	a{
+		color:#fff!important;
+	}
+	
 }
 
 #primary-menu a{
 	text-decoration-line:none!important;
-	color: #fff;
+	color: rgba(255,255,255,0.8);
 }
-#primary-menu a:hover {
-    margin-left: 25px;
-    font-weight: bold;
+
+#primary-menu a:active {
+    color: #fff;   
+}
+
+#primary-menu a:hover{
+    color: #fff;   
 }
 
 
@@ -125,16 +129,11 @@ h3{
 
 /*-----------Front page----------------*/
 
-
-.front_latest_post_link{
-	font-size: 32px;
-	margin-bottom: 50px;
-}
-
 .page-id-97.box{
 	justify-content: flex-start;
 }
 
+/*------for mobile Form---------*/
 .tab {
   display: none;
 }
@@ -142,6 +141,7 @@ h3{
 input.invalid {
   background-color: #ffdddd;
 }
+
 #nextBtn,#subBtn{
 	border:none;
 	border-bottom: 2px dashed #000;
@@ -149,56 +149,9 @@ input.invalid {
 	background: transparent;
 	font-size: 18px;
 	text-underline-position: auto;
-	text-decoration-color: #01c4d3
+	text-decoration-color: #01c4d3;
 }
 
-/*-----------Form Styling----------------*/
-.wpcf7-form{
-	div{
-		margin-bottom: 15px;
-		h2{
-			font-weight: bold;
-			margin-bottom: 25px;
-		}
-		label{
-			margin: 20px 0;
-		}
-	}
-}
-
-input[type=text],input[type=email]{
-	border: none;
-	border-bottom: 1px solid #000;
-	box-shadow: none;
-	border-radius: 0;
-	margin-bottom: 5px;
-}
-
-span.wpcf7-list-item {
-    display: block;
-}    
-
-.checkmark input{
-	  position: relative;
-	  padding-left: 35px;
-	  margin-bottom: 12px;
-	  cursor: pointer;
-	  font-size: 22px;
-	  -webkit-user-select: none;
-	  -moz-user-select: none;
-	  -ms-user-select: none;
-	  user-select: none;
-
-  span{
-  	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  height: 25px;
-	  width: 25px;
-	  background-color: #eee;
-	  border-radius: 50%;
-  }
-}
 
 
 

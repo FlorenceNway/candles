@@ -20,16 +20,16 @@ get_header(); ?>
 				<li>Connect with them on Slack</li>
 			</ol>
 
-			<h4 class="register_text mobile-register-link"><a href="<?php echo get_template_directory_uri(); ?>/form-register/" class="link"> Register for free </a><i class="fas fa-arrow-right"></i></h4>
+			<h4 class="register_text mobile-register-link"><a href="<?php echo get_template_directory_uri(); ?>/form-register/" class="link"> Register for free <i class="fas fa-arrow-right"></i></a></h4>
 
-			<h4 class="register_text desktop-register-link"><a href="<?php echo get_template_directory_uri(); ?>/desktop-form/" class="link"> Register for free </a><i class="fas fa-arrow-right"></i></h4>
+			<h4 class="register_text desktop-register-link"><a href="<?php echo get_template_directory_uri(); ?>/desktop-form/" class="link"> Register for free <i class="fas fa-arrow-right"></i></a></h4>
 		
 
 			<p class="front_latest_post_link">We also have an amazing blog, read <a href="<?php echo get_template_directory_uri();?>/blog/" class="link">the latest posts </a></p>
 		</div>
 <!------------------Only to show in Mobile view ----------- -->
 		<div class="blog-wrapper" id="moblie-frontpage">
-			<?php $args = array( 'post_type' => 'post','order' =>'ASC')?>
+			<?php $args = array( 'post_type' => 'post','order' =>'ASC','posts_per_page' => 2)?>
 
 			   <?php $posts = new WP_Query( $args );  ?>
 
@@ -66,9 +66,13 @@ get_header(); ?>
 						<a href="<?php echo get_permalink(); ?>" rel="bookmark">
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>" /></a>
 					</div>
+
 				</div>
+
 				  <?php endwhile; ?>
 				<?php endif; ?>
+
+				<p class="blog-link"><a href="<?php echo get_template_directory_uri();?>/blog/" class="link">Read More <i class="fas fa-arrow-right"></i></a></p>
 		</div>
 <!-------------------End Only to show in Mobile view----- -->
 
