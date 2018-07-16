@@ -25,14 +25,20 @@ get_header(); ?>
 <script>
 var lookingFor = document.getElementById('lookingFor').value;
 console.log('lookingFor:', lookingFor);
+
 	jQuery(".mentor").hide();
 	jQuery(".mentored").hide();
 	jQuery(".both").hide();
+	
 	if(lookingFor == "a mentor") {
 	  jQuery(".mentor").show();
 	} else if (lookingFor == "mentored") {
 	  jQuery(".mentored").show();
 	} else {
+		document.getElementsByClassName('total-step').innerHTML = '4';
+	  document.getElementById('step3').innerHTML = '3';
+	  document.getElementById('step4').innerHTML = '4';	
 	  jQuery(".both").show();
+	  
 	}
 </script>

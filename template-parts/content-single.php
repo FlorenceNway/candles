@@ -14,7 +14,7 @@
 				  		<div class="blog-category">
 			        			<?php 
 			        				foreach((get_the_category()) as $category){
-							        	echo $category->name."<br>";
+							        	
 							       }
 							      ?> 
 			        	</div>
@@ -24,7 +24,7 @@
 						<div class="blog-detail">
 					     	<span class="author">
 					     		<?php 
-					     			echo get_the_author();
+					     			
 								  ?>
 			        		</span>
 			    		</div>

@@ -7,58 +7,47 @@
 
 get_header(); ?>
 
-	<div id="primary" class="resources-area">
-		<main id="resources" class="site-main" role="main">
-<div class="resource-info">
-	<p>
-	A curated page dedicated to all the really good links out there. 
-	<br>
-	<br>
-	Seriously, they’re good.
-	</p>
-</div>
-		<?php if ( have_posts() ) : ?>
+<div id="primary" class="resources-area">
+<main id="resources" class="site-main" role="main">
+	<div class="resource-info">
+		<p>
+		A curated page dedicated to all the <span>really</span> good links out there. </p>
+		
+		<p>Seriously, they’re good.
+		</p>
+	</div>
 
-			<header>
-				
-			</header><!-- .page-header -->
 	<div class="resource-links">
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-		<hr class="resource-hr">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<?php	
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		
-	
-		<a href="<?php echo CFS()->get( 'resources_link' ); ?>">helpp me</a>
-		
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+	$args = array( 'post_type' => 'resource', 'posts_per_page' => 6, 'order' => 'ASC'); 
+	$posts = new WP_Query( $args );
 
-	<div class="entry-content">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-content -->
-	
-</article><!-- #post-## -->
+	while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-			<?php endwhile; ?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			
+			<hr class="resource-hr">
+
+			<h1><?php echo get_the_title();?></h1>
+
+			<div class="resource-block">
+				<?php echo get_the_content();  ?>
+				<span>&#x2197;</span>
+			</div>
+
+		</article><!-- #post-## -->
+
+	<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
+	</div>	
+		<?php get_footer(); ?>
+</main>
+</div><!-- #primary -->
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
-<?php get_footer(); ?>
-		
-	</div><!-- #primary -->
 
 

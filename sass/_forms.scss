@@ -61,14 +61,125 @@ textarea {
 	width: 100%;
 }
 
-/*-------Form Next Button---*/
-form{
-	.next_btn{
-		background: none;
-		border: none;
-		box-shadow: none;
-		text-shadow: none;
-		border-bottom: 1px dashed;
-		color: #000;
+/*-----------Form Styling----------------*/
+#post-210{
+		.entry-content {
+    					margin:0;
+    					
+		}
+}
+
+form.wpcf7-form{
+		width: 283px;
+		margin: 0 auto;
+
+	div{
+		h2,h3{	
+			font-size: 28px;
+  			font-weight: 600;
+			margin-bottom: 50px;
+		}
+		.wish_to_be {
+    		margin: 28px 0;
+		}
 	}
 }
+
+input[type=text],input[type=email]{
+	border: none;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+    border-radius: 0;
+    width: 90%;
+    height: 30px;
+ }
+
+span.wpcf7-list-item {
+    display: block;
+}    
+
+.checkmark input{
+	  position: relative;
+	  padding-left: 35px;
+	  margin-bottom: 12px;
+	  cursor: pointer;
+	  font-size: 22px;
+	 
+
+  span{
+  	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 25px;
+	  width: 25px;
+	  background-color: #eee;
+	  border-radius: 50%;
+  }
+}
+
+
+.tab {
+  display: none;
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+#nextBtn,#subBtn,#letsgo{
+	border:none;
+	box-shadow: none;
+	border-bottom: 2px dashed #000; 
+	background: transparent;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0;
+	margin-top: 24px;
+}
+
+/*---Radio button and Checkbox customizaion ----*/
+
+span.wpcf7-list-item {
+    margin: 0 0 0 0; 
+}
+
+
+.checkmark input[type='radio'],.checkmark input[type='checkbox']{
+    position: relative;
+    top: 16px;
+}
+
+input[type='radio'],input[type='checkbox'] {
+ -webkit-appearance:none;
+  width:20px;
+  height:20px;
+  border:2px solid #000;
+  border-radius:50%;
+  outline:none;
+}
+
+input[type='radio']:hover {
+  box-shadow:0 0 5px 0px orange inset;
+}
+
+input[type='radio']:before,input[type='checkbox']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+
+input[type='radio']:checked:before,input[type='checkbox']:checked:before {
+  background:#01c4d3;
+  color:#01c4d3;
+}
+
+.radio-mentoring{
+	 .wpcf7-form div label {
+     	margin: 2px 0; 
+	}
+}
+
+
