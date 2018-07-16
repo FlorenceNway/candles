@@ -6,15 +6,16 @@
     $(window).scroll(function() {
 
       scrollTop = $(window).scrollTop();
-    
+
     if (scrollTop >= 10) {
       $('.nav-full-height').addClass('scrolled-nav');
+
     } else if (scrollTop <= 10) {
       $('.nav-full-height').removeClass('scrolled-nav');
     } 
 
-if ($('scrolled-nav.logo').height() == 60) {
-        $('.menu-menu-1-container').show();
+    if ($('scrolled-nav.logo').height() == 60) {
+          $('.menu-menu-1-container').show();
     }
         else if ($('.scrolled-nav.logo').height() == 40){
           $('.scrolled-nav div.menu-menu-1-container').hide();        
@@ -25,7 +26,7 @@ if ($('scrolled-nav.logo').height() == 60) {
 
 
   //displaying username in step2 (where are you based)
-  $("#lastname").focus(function(){
+  $("#email").focus(function(){
       var firstname = jQuery('#firstname').val();
       document.getElementById("username").innerHTML = firstname;
    });
@@ -50,10 +51,14 @@ if ($('scrolled-nav.logo').height() == 60) {
     if (n == (tabs.length - 1)) {
       $("#nextBtn").hide();
       $("#subBtn").show();
+      $("#nextarr").hide();
+      $("#subarr").show();
 
     } else {
       $("#nextBtn").show();
       $("#subBtn").hide();
+      $("#nextarr").show();
+      $("#subarr").hide();
 
     }
 

@@ -20,7 +20,7 @@ get_header(); ?>
 				<li>Connect with them on Slack</li>
 			</ol>
 
-			<h4 class="register_text mobile-register-link"><a href="<?php echo get_template_directory_uri(); ?>/form-register/" class="link"> Register for free <i class="fas fa-arrow-right"></i></a></h4>
+			<h4 class="register_text mobile-register-link"><a href="<?php echo get_template_directory_uri(); ?>/mobile-form/" class="link"> Register for free <i class="fas fa-arrow-right"></i></a></h4>
 
 			<h4 class="register_text desktop-register-link"><a href="<?php echo get_template_directory_uri(); ?>/desktop-form/" class="link"> Register for free <i class="fas fa-arrow-right"></i></a></h4>
 		

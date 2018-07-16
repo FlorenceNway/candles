@@ -35,6 +35,10 @@ console.log('lookingFor:', lookingFor);
 	} else if (lookingFor == "mentored") {
 	  jQuery(".mentored").show();
 	} else {
+		document.getElementsByClassName('total-step').innerHTML = '4';
+	  document.getElementById('step3').innerHTML = '3';
+	  document.getElementById('step4').innerHTML = '4';	
 	  jQuery(".both").show();
+	  
 	}
 </script>

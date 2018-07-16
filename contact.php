@@ -23,8 +23,8 @@ get_header(); ?>
 
 				
 			</div>
-				
-	
+
+			
 
 		  <?php wp_reset_postdata(); ?>
 

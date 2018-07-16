@@ -110,6 +110,7 @@ h3{
 .link{
 	border-bottom: 2px dashed #000;
 	line-height: 1.5;
+	color: #000;
 }
 
 .link:active,.link:visited{ 
@@ -121,6 +122,10 @@ h3{
 	text-decoration-line: none;
 	border-bottom: 2px dashed #01C4D3;
 	color:#01C4D3;
+
+	#nextBtn,#subBtn{
+		border-bottom: 2px dashed #01C4D3;
+	}
 }
 
 .fa-arrow-right{
@@ -133,24 +138,7 @@ h3{
 	justify-content: flex-start;
 }
 
-/*------for mobile Form---------*/
-.tab {
-  display: none;
-}
 
-input.invalid {
-  background-color: #ffdddd;
-}
-
-#nextBtn,#subBtn{
-	border:none;
-	border-bottom: 2px dashed #000;
-	box-shadow: none;
-	background: transparent;
-	font-size: 18px;
-	text-underline-position: auto;
-	text-decoration-color: #01c4d3;
-}
 
 
 

@@ -15,7 +15,7 @@ get_header(); ?>
 	   <?php while ( have_posts() ) : the_post(); ?>
 			<div class="about">
 
-				<h1><?php echo the_title(); ?></h1>
+				<h1 class="about_candles"><?php echo the_title(); ?></h1>
 										
 				<div>
 					<?php echo the_content(); ?> 

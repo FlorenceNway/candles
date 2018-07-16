@@ -11,45 +11,32 @@ get_header(); ?>
 <main id="resources" class="site-main" role="main">
 	<div class="resource-info">
 		<p>
-		A curated page dedicated to all the really good links out there. 
-		<br>
-		<br>
-		Seriously, they’re good.
+		A curated page dedicated to all the <span>really</span> good links out there. </p>
+		
+		<p>Seriously, they’re good.
 		</p>
 	</div>
 
 	<div class="resource-links">
-	<?php while ( have_posts() ) : the_post(); ?>
+
+	<?php	
+
+	$args = array( 'post_type' => 'resource', 'posts_per_page' => 6, 'order' => 'ASC'); 
+	$posts = new WP_Query( $args );
+
+	while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header class="entry-header">
-				<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail( 'large' ); ?>
-				<?php endif; ?>
-
+			
 			<hr class="resource-hr">
 
-				<h1><?php 
-					echo get_the_title();
-					
-					// the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); 
-				?></h1>
+			<h1><?php echo get_the_title();?></h1>
 
-				<?php if ( 'post' === get_post_type() ) :
+			<div class="resource-block">
+				<?php echo get_the_content();  ?>
+				<span>&#x2197;</span>
+			</div>
 
-					echo get_the_content(); 
-
-				?>
-		
-					
-		
-				<?php endif; ?>
-			</header><!-- .entry-header -->
-
-			<div class="entry-content">
-				<?php the_excerpt(); ?>
-			</div><!-- .entry-content -->
-	
 		</article><!-- #post-## -->
 
 	<?php endwhile; ?>

@@ -62,26 +62,37 @@ textarea {
 }
 
 /*-----------Form Styling----------------*/
-.wpcf7-form{
-	div{
-		margin-bottom: 15px;
-		h2{
-			font-weight: bold;
-			margin-bottom: 25px;
+#post-210{
+		.entry-content {
+    					margin:0;
+    					
 		}
-		label{
-			margin: 20px 0;
+}
+
+form.wpcf7-form{
+		width: 283px;
+		margin: 0 auto;
+
+	div{
+		h2,h3{	
+			font-size: 28px;
+  			font-weight: 600;
+			margin-bottom: 50px;
+		}
+		.wish_to_be {
+    		margin: 28px 0;
 		}
 	}
 }
 
 input[type=text],input[type=email]{
 	border: none;
-	border-bottom: 1px solid #000;
-	box-shadow: none;
-	border-radius: 0;
-	margin-bottom: 5px;
-}
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+    border-radius: 0;
+    width: 90%;
+    height: 30px;
+ }
 
 span.wpcf7-list-item {
     display: block;
@@ -93,10 +104,7 @@ span.wpcf7-list-item {
 	  margin-bottom: 12px;
 	  cursor: pointer;
 	  font-size: 22px;
-	  -webkit-user-select: none;
-	  -moz-user-select: none;
-	  -ms-user-select: none;
-	  user-select: none;
+	 
 
   span{
   	  position: absolute;
@@ -109,33 +117,32 @@ span.wpcf7-list-item {
   }
 }
 
-/*-------Form Next Button---*/
-form{
 
-	 h2{
-    	font-size: 36px;
-	}
+.tab {
+  display: none;
+}
 
-	.next_btn{
-		background: none;
-		border: none;
-		box-shadow: none;
-		text-shadow: none;
-		border-bottom: 1px dashed;
-		color: #000;
-	}
+input.invalid {
+  background-color: #ffdddd;
+}
+
+#nextBtn,#subBtn,#letsgo{
+	border:none;
+	box-shadow: none;
+	border-bottom: 2px dashed #000; 
+	background: transparent;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0;
+	margin-top: 24px;
 }
 
 /*---Radio button and Checkbox customizaion ----*/
 
 span.wpcf7-list-item {
-    display: inline-block;
     margin: 0 0 0 0; 
 }
 
-.wpcf7-form div label {
-     margin-top: 0;
-}
 
 .checkmark input[type='radio'],.checkmark input[type='checkbox']{
     position: relative;
@@ -143,7 +150,7 @@ span.wpcf7-list-item {
 }
 
 input[type='radio'],input[type='checkbox'] {
-  -webkit-appearance:none;
+ -webkit-appearance:none;
   width:20px;
   height:20px;
   border:2px solid #000;
@@ -169,10 +176,10 @@ input[type='radio']:checked:before,input[type='checkbox']:checked:before {
   color:#01c4d3;
 }
 
-.wpcf7-form div label {
-     margin: 2px 0 !important; 
+.radio-mentoring{
+	 .wpcf7-form div label {
+     	margin: 2px 0; 
+	}
 }
 
-form.wpcf7-form {
-    margin-left: 15%;
-}
+

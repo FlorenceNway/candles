@@ -91,30 +91,34 @@ object {
 /*-------------------Mobile and Tablet------------*/
 
 	.site-container{
-					width: 90%;
+					width: 88%;
 					margin: 0 auto;
 					min-height:100vh;
-		}
+	}
 
-	  .container{
+	.container{
             padding-top: unset; /*bootstrap default class unset*/
-        }
+    }
 
-      .d-container{
+    .d-container{
             padding-top: unset;
-      }  
+    }  
 
-      .content-container{
+    .content-container{
             padding-top: 20px;
-      }  
+    }  
 
-      #desktop-navigation {
+	.entry-content{
+		min-height: 100vh;
+	}
+
+    #desktop-navigation {
         	display: none; 
-       }
+    }
 
-      .scrolled-nav {
+    .scrolled-nav {
         display: none; 
-      }  
+    }  
 
       
     ul li{ list-style: none}
@@ -123,9 +127,36 @@ object {
       				display: block;
 				    width: 100%;
 				    background-image: linear-gradient(90deg,#01c4d3,#f4c7ee);
-				    position: fixed;
+				    position: relative;
 				    bottom: 0;
       				}
+
+/*------------Mobile Menu page----------------------*/
+.mobile-menu{
+            height: 84%;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+                 .menu-menu-2-container{
+                           font-size: 28px;
+                           font-weight: 600;
+                           line-height: 1.5;
+                }
+    }
+
+
+.mobile-close{
+    font-size: 18px;
+    margin-top: 25px;
+    
+    a{
+        color: white;
+    }
+}
+
+
 
 /*---------------Front Page--------------*/
     .front-page-wrapper{
@@ -139,15 +170,22 @@ object {
 
 	#moblie-frontpage {display: block;}
 		
-    ol.front_page_intro li {
-    					font-size: 18px;
-						}
+    ol.front_page_intro {
+      			margin:0;
+      			margin-bottom: 24px;
+    		li{
+    			font-size: 18px;
+    		}
+    	
+    }
+
     .simplified_text{
     				display: block;
 					font-size: 28px;
 					font-weight: 600;
 					padding-bottom: 20px;
 					}
+
     .desktop-register-link {display:none;}
     .mobile-register-link {display:block;
     					   font-size: 18px;
@@ -165,6 +203,8 @@ object {
 				}
 
 	.register{
+			min-height: 100vh;
+
 			h3{
 				font-size: 28px;
    			 	font-weight: 600;
@@ -176,9 +216,16 @@ object {
 	}
 
 /*---mobile about page------*/
-	.about,.contact{
+	.about{
 		padding-bottom: 40%;
 
+		h1.about_candles:after {
+		    content: " Candles";
+		}
+	}
+
+	.about,.contact{
+		
 		h1{
 			font-size: 18px;
 			font-weight: 600;
@@ -186,6 +233,9 @@ object {
 		}
 		p{
 			font-size: 16px;
+			span{
+				border-bottom: 1px solid #000;
+			}
 
 		}
 		p:last-child{
@@ -224,27 +274,134 @@ object {
         margin-top: 12%;
     }
 
-/*---mobile resource page*/
+/*---mobile resource page--*/
     .resource-info{
-        font-size: 20px;
-        font-weight: 600;
-        width:80%;
-    }
+	    font-size: 18px;
+	    font-weight: 600;
+	 
+	    p{
+	    	padding-top: 20px;
+	    	span{
+	    		font-style: italic;
+	    	}
+	    }
+	}
 
-/*--Single -Blog Page----*/
-    .first-single-image {
-            height: 300px;
+	.resource-links{
+		h1{
+			font-size: 18px;
+	    	font-weight: 600;
+		}
+		.resource-hr{
+	    		width: 100%;
+	    		background-color: #000;
+		}
+
+	}
+
+	.resource-block{
+		p{
+			font-size: 16px;
+			margin-bottom: 14px;
+		}
+		a{
+			 font-size: 12px;
+  			font-weight: 600;
+  			margin: 14px 0 44px 0;
+		}
+	}
+
+/*------Single -Blog Page (single-post.php)-------*/
+
+#first-img-fordesktop{
+	display: none;
+}
+#first-img-formobile{
+	display: block;
+}
+
+.single-blog-page{
+	
+	.first-single-image {
+            height: 176px;
         img{
             width: 100%;
             height: 100%;
-        }
-    }
+    	}
+	}	
+	
+	.blog-category{
+		font-size: 10px;
+		padding-top: 12px;
+	}
+
+	h2{
+		font-size: 26px;
+  		font-weight: 600;
+	}
+
+	.author{
+		font-size: 10px;
+		padding-bottom: 18px;
+	}
+
+	.entry-content{
+			margin: 0;
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 1.5;
+		span{
+			border-bottom: 1px dashed #000;
+		}
+		
+	}
+	.caption{
+			border: none;
+			font-size: 8px;
+			color: #ff00e3;
+			.link{
+				color:#ff00e3;
+				border-bottom: 1px dashed #ff00e3;
+			}
+		}
+    .quote{
+    	font-size: 16px;
+    	font-style: italic;
+    	background-image: linear-gradient(to right, rgba(1, 196, 211, 0.48), rgba(244, 199, 238, 0));
+    }   
+    
+    .blog-sub-title{
+  			font-size: 20px;
+  			font-weight: 600;
+  		}
+}
 
     img.size-medium {
         width: 100%;
         height: 300px;
     }
 
+ /*Page post Navigation Link*/
+.nav-links {
+	margin-top: 80px;
+	padding-bottom: 80px;
+	line-height: 1.2;
+
+	a{
+		color: #01c4d3;
+    	font-size: 12px;
+    	font-weight: 600;
+	}
+	a:hover{
+		text-decoration: none;
+		color: #01c4d3;
+	}
+   .fa-arrow-right,.fa-arrow-left{
+   		font-size: 10px;
+   }
+}
 
 /*---Archive blog page(index.php)---*/
     .blog-content{
@@ -306,12 +463,12 @@ object {
   			}
 
    	footer{
-   		position: fixed;
-   		bottom: 50px;
-   		.copyright{
-   			margin-top: 10px;
-   			padding-left: 4%;
-   		}
+	   		position: absolute;
+	       	width: 100%;
+		   		.copyright{
+		   			margin-top: 10px;
+		   			padding-left: 4%;
+		   		}
    		
    	}     
 /*-------------------Tablet Media Screen----------------*/
@@ -358,27 +515,23 @@ object {
 
 
     .scrolled-nav {
-        height: 13% !important; 
+        height: 17% !important; 
         padding-top: 3%;
     }
 
     .scrolled-nav .logo{
-        width: 60px;
-        transform: translate(-620px,-5px);
-        transition: 3s;
+           	width: 8.5%;
+    		transform: translate(-210px,-10px);
+    		transition: 2s;
     }
 
     #desktop-navigation {
             display: flex;
             z-index: 1;
+            padding-top: 0;
     }
 
-    .scrolled-nav{
-              .mentor-text{
-                     display: none;
-                }
-    }
-            
+               
     
     nav.nav-height {
                 .menu-menu-1-container{
@@ -444,10 +597,16 @@ object {
         padding-top: 14%;
         width:65%;
 }
+.about{
+	h1.about_candles:after {
+		    content: " ";
+	}
+}
 
 
 .about,.contact{
 	margin-bottom: 30px;
+	padding-bottom: 0;
 
 	h1{
 		font-size: 36px;
@@ -464,7 +623,7 @@ object {
 	}
 
 	.p2{
-			padding-top: 57px;
+		padding-top: 57px;
 	}
 }
 
@@ -473,16 +632,17 @@ object {
         grid-template-columns: 1fr 1fr;  
 }
 .tom-img,.tabrez-img {
-    width: 210px;
-    height: 238px;
-    margin-left: 30px;
+	    width: 210px;
+	    height: 238px;
+	    margin-left: 60px;
 }    
+
 .tom{
         display: grid;
         grid-template-columns: 1fr 1fr;  
 }
 
-/*about page - switch grid areas*/
+/*---about page - switch grid areas---*/
 .tom div:nth-of-type(1) {
     order: 2;
   }
@@ -501,13 +661,26 @@ object {
   .blue-line{
     display: none;
   }
-/*resources page*/
+/*------resources page-------------*/
+	.resource-info{
+	    font-size: 36px;
+	    font-weight: 600;
+	    width:56%;
+	    p{
+	    	padding-top: 20px;
+	    	span{
+	    		font-style: italic;
+	    	}
+	    }
+	}
+
 	#primary.resources-area{
 	    padding-top: 10%;
 	    display: flex;
 	    justify-content: left;
 	    width: 100%;
 	}
+
 	.resource-links{
 	    display: grid;
 	    grid-auto-rows: minmax(100px, auto);
@@ -518,30 +691,65 @@ object {
 			        width: 300px;
 			    }
 	}
+	
+	
+/*---------Single Blog page----------*/
 
-	.resource-hr{
-	    width: 100%;
+	#first-img-fordesktop{
+				display: block;
+	}
+	#first-img-formobile{
+				display: none;
 	}
 
-	.resource-info{
-	    font-size: 40px;
-	    font-weight: 600;
-	    width:50%;
+	.single-blog-page{
+		width: 810px;
+		margin: 0 auto;
+
+		.blog-category {
+    		font-size: 16px;
+    	}
+
+    	.author {
+    		font-size: 12px;
+    	}	
+    		
+		p{
+			font-size: 20px;
+		}
+	
+		.first-single-image {
+		        width: 100%;
+	  			height: 496px;
+		}
+
+		img.size-medium {
+		        width: 100%;
+		        height: 496px;
+		}
+
+		.caption{
+			font-size: 12px;
+		}
+
+		.quote{
+    			width: 630px;
+    			margin: 0 auto;
+    			background: none;
+    			padding: 55px 0 58px 0;
+    			p{
+    				font-size: 24px;
+    				font-style: italic;
+    			}
+  		}
+
+  		.blog-sub-title{
+  			font-size: 20px;
+  			font-weight: 600;
+  		}
 	}
 
-	/*---------Blog page----------*/
-
-	.first-single-image {
-	        height: 400px;
-	        width: 810px;
-	}
-
-	img.size-medium {
-	        width: 100%;
-	        height: 600px;
-	}
-
-	/*---Archive blog page(index.php)---*/
+/*---Archive blog page(index.php)---*/
 	.blog-wrapper{
 	            margin-top: 100px;
 	}
@@ -583,8 +791,6 @@ object {
 	            
 	        }
 
-			
-
 	        .feature_img {
 	            height: 400px;
 	            flex: 0 70%;
@@ -615,7 +821,7 @@ object {
 	}
 
 	footer{
-	    	bottom: 16px;
+	    	bottom: 0;
 	    	position: relative;
 
 				.copyright{
@@ -627,8 +833,45 @@ object {
 		         	padding-left: 0;
 	         	} 
 	}
-    
+
+form.wpcf7-form{
+		width: 728px;
+		margin-left: 0;
+		font-size: 18px;
+
+	div{
+		h2,h3{	
+			font-size: 36px;
+  			font-weight: 600;
+			margin-bottom: 50px;
+		}
+		.wish_to_be {
+    		margin: 28px 0;
+		}
+	}
+}
+
+input[type=text],input[type=email]{
+	border: none;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+    border-radius: 0;
+    width: 90%;
+    height: 30px;
+ }
+span.wpcf7-list-item label{
+	margin-bottom: 0;
+}  
 
 }
 
+@media screen and (min-width: 1280px) {  
+
+.scrolled-nav .logo{
+        width: 8.5%;
+        transform: translate(-270px,-5px);
+        transition: 3s;
+        margin-left: 0;
+    }
+}
 /*-----------End of Media Queries-----------------*/
